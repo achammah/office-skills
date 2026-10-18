@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head><title>Key Metrics for Success Dashboard</title></head>
+<body class="brand-slide" data-layout="kpi-grid">
+  <!-- Thin cyan horizontal bar along top of slide -->
+  <div style="position: absolute; top: 0; left: 0; right: 0; height: 5pt; background: var(--brand-tertiary); z-index: 10;"></div>
+
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">A set of key metrics for success will ensure we deliver effectively on this plan</h1>
+  </div>
+
+  <div class="content-zone" style="display: flex; flex-direction: row; gap: 0pt;">
+
+    <!-- FAR LEFT: Cyan accent bar -->
+    <div style="width: 5pt; min-width: 5pt; background: var(--brand-tertiary); flex-shrink: 0;"></div>
+
+    <!-- LEFT COLUMN: Customer Funnel (~28%) -->
+    <div style="flex: 28; min-width: 0; display: flex; flex-direction: column; padding: 0 2pt 0 4pt;">
+      <!-- Section Header -->
+      <div style="display: flex; align-items: center; gap: 4pt; margin-bottom: 2pt; flex-shrink: 0;">
+        <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); letter-spacing: 1px; white-space: nowrap;">CUSTOMER FUNNEL</p>
+        <div style="flex: 1; border-bottom: 1px dashed var(--brand-gray-medium);"></div>
+      </div>
+
+      <!-- Funnel content: labels + funnel SVG -->
+      <div style="flex: 1; min-height: 0; display: flex; flex-direction: row; gap: 0pt;">
+        <!-- Stage Labels -->
+        <div style="width: 46pt; flex-shrink: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 4pt 0 10pt 0;">
+          <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); line-height: 1.05;">QUALIFIED<br>LEADS</p>
+          <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); line-height: 1.05;">ACCOUNT<br>SETUP</p>
+          <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); line-height: 1.05;">CLIENT<br>ONBOARDED</p>
+          <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); line-height: 1.05;">FIRST ORDER</p>
+          <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); line-height: 1.05;">RE-ORDER</p>
+          <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); line-height: 1.05;">SMALL ACCOUNT<br>REVENUES</p>
+        </div>
+
+        <!-- Funnel SVG - continuous segments with gradient, light->dark -->
+        <div style="flex: 1; min-width: 0; min-height: 0; overflow: hidden;">
+          <svg viewBox="0 0 160 300" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%;">
+            <defs>
+              <linearGradient id="seg1-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#A8C8E8"/>
+                <stop offset="100%" stop-color="#8BB8DD"/>
+              </linearGradient>
+              <linearGradient id="seg2-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#7AADDA"/>
+                <stop offset="100%" stop-color="#5B9BD5"/>
+              </linearGradient>
+              <linearGradient id="seg3-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#5B9BD5"/>
+                <stop offset="100%" stop-color="#4488C5"/>
+              </linearGradient>
+              <linearGradient id="seg4-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#3D7DB8"/>
+                <stop offset="100%" stop-color="#2E75B6"/>
+              </linearGradient>
+              <linearGradient id="seg5-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2E75B6"/>
+                <stop offset="100%" stop-color="#25577E"/>
+              </linearGradient>
+              <linearGradient id="seg6-grad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#224C6E"/>
+                <stop offset="100%" stop-color="#1E3A5F"/>
+              </linearGradient>
+            </defs>
+            <!-- Funnel segments: continuous with per-segment gradients for smooth transition -->
+            <polygon points="10,0 140,0 128,42 22,42" fill="url(#seg1-grad)"/>
+            <polygon points="22,42 128,42 118,84 32,84" fill="url(#seg2-grad)"/>
+            <polygon points="32,84 118,84 110,126 40,126" fill="url(#seg3-grad)"/>
+            <polygon points="40,126 110,126 103,168 47,168" fill="url(#seg4-grad)"/>
+            <polygon points="47,168 103,168 97,210 53,210" fill="url(#seg5-grad)"/>
+            <polygon points="53,210 97,210 90,248 60,248" fill="url(#seg6-grad)"/>
+            <!-- Pointed teardrop/pin tip -->
+            <polygon points="60,248 90,248 75,280" fill="#1E3A5F"/>
+
+            <!-- Values inside funnel (dark text on lighter segments, white on darker) -->
+            <text x="75" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#1E3A5F" font-family="Arial">XX</text>
+            <text x="75" y="70" text-anchor="middle" font-size="15" font-weight="bold" fill="#1E3A5F" font-family="Arial">XX</text>
+            <text x="75" y="112" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E3A5F" font-family="Arial">XX</text>
+            <text x="75" y="154" text-anchor="middle" font-size="13" font-weight="bold" fill="white" font-family="Arial">XX</text>
+            <text x="75" y="196" text-anchor="middle" font-size="12" font-weight="bold" fill="white" font-family="Arial">XX</text>
+            <text x="75" y="236" text-anchor="middle" font-size="11" font-weight="bold" fill="white" font-family="Arial">XX</text>
+
+            <!-- Growth arrows (min 9px font, brand green) -->
+            <text x="134" y="14" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+            <text x="124" y="56" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+            <text x="114" y="98" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+            <text x="107" y="140" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+            <text x="100" y="182" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+            <text x="93" y="224" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+
+            <!-- Grey ring indicators (partial arcs, brand neutral) -->
+            <circle cx="148" cy="21" r="8" fill="none" stroke="#A2AAAD" stroke-width="3" stroke-dasharray="38 12"/>
+            <circle cx="140" cy="63" r="8" fill="none" stroke="#A2AAAD" stroke-width="3" stroke-dasharray="38 12"/>
+            <circle cx="133" cy="105" r="8" fill="none" stroke="#A2AAAD" stroke-width="3" stroke-dasharray="38 12"/>
+            <circle cx="126" cy="147" r="8" fill="none" stroke="#A2AAAD" stroke-width="3" stroke-dasharray="38 12"/>
+            <circle cx="119" cy="189" r="8" fill="none" stroke="#A2AAAD" stroke-width="3" stroke-dasharray="38 12"/>
+            <circle cx="112" cy="231" r="8" fill="none" stroke="#A2AAAD" stroke-width="3" stroke-dasharray="38 12"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SECTION: Stream Performance (badges + KPIs) (~72%) -->
+    <div style="flex: 72; min-width: 0; display: flex; flex-direction: column; padding: 0 3pt 0 0;">
+      <!-- Section Header spanning both badge + KPI columns -->
+      <div style="display: flex; align-items: center; gap: 4pt; margin-bottom: 2pt; flex-shrink: 0;">
+        <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); letter-spacing: 1px; white-space: nowrap;">STREAM PERFORMANCE</p>
+        <div style="flex: 1; border-bottom: 1px dashed var(--brand-gray-medium);"></div>
+      </div>
+
+      <!-- Two sub-columns: badges (left) + KPI grid (right) -->
+      <div style="flex: 1; min-height: 0; display: flex; flex-direction: row; gap: 2pt;">
+
+        <!-- Sub-column: Badges (~28%) - wider to accommodate larger rings -->
+        <div style="flex: 28; min-width: 0; display: flex; flex-direction: column; padding: 2pt 0;">
+          <div style="flex: 1; min-height: 0; overflow: hidden;">
+            <svg viewBox="0 0 140 310" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%;">
+              <!-- Badge 1: Digital Platform - large grey ring encircling content -->
+              <circle cx="70" cy="46" r="44" fill="none" stroke="#D0D0D0" stroke-width="5" stroke-dasharray="210 68" stroke-linecap="round" transform="rotate(-210 70 46)"/>
+              <text x="70" y="30" text-anchor="middle" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+              <text x="70" y="52" text-anchor="middle" font-size="20" fill="var(--brand-text-body)" font-family="Arial" font-weight="bold">XX</text>
+              <rect x="28" y="66" width="84" height="26" rx="13" fill="#1E3A5F"/>
+              <text x="70" y="78" text-anchor="middle" font-size="9" fill="white" font-family="Arial" font-weight="bold">DIGITAL</text>
+              <text x="70" y="88" text-anchor="middle" font-size="9" fill="white" font-family="Arial" font-weight="bold">PLATFORM</text>
+
+              <!-- Badge 2: Acquisition & Retention -->
+              <circle cx="70" cy="151" r="44" fill="none" stroke="#D0D0D0" stroke-width="5" stroke-dasharray="210 68" stroke-linecap="round" transform="rotate(-210 70 151)"/>
+              <text x="70" y="135" text-anchor="middle" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+              <text x="70" y="157" text-anchor="middle" font-size="20" fill="var(--brand-text-body)" font-family="Arial" font-weight="bold">XX</text>
+              <rect x="18" y="171" width="104" height="26" rx="13" fill="#1E3A5F"/>
+              <text x="70" y="183" text-anchor="middle" font-size="9" fill="white" font-family="Arial" font-weight="bold">ACQUISITION &amp;</text>
+              <text x="70" y="193" text-anchor="middle" font-size="9" fill="white" font-family="Arial" font-weight="bold">RETENTION</text>
+
+              <!-- Badge 3: Additional Services -->
+              <circle cx="70" cy="256" r="44" fill="none" stroke="#D0D0D0" stroke-width="5" stroke-dasharray="210 68" stroke-linecap="round" transform="rotate(-210 70 256)"/>
+              <text x="70" y="240" text-anchor="middle" font-size="9" fill="#2E7D32" font-family="Arial" font-weight="bold">&#x25B2;XX</text>
+              <text x="70" y="262" text-anchor="middle" font-size="20" fill="var(--brand-text-body)" font-family="Arial" font-weight="bold">XX</text>
+              <rect x="23" y="276" width="94" height="26" rx="13" fill="#1E3A5F"/>
+              <text x="70" y="288" text-anchor="middle" font-size="9" fill="white" font-family="Arial" font-weight="bold">ADDITIONAL</text>
+              <text x="70" y="298" text-anchor="middle" font-size="9" fill="white" font-family="Arial" font-weight="bold">SERVICES</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Sub-column: KPI Metrics (~72%) -->
+        <div style="flex: 72; min-width: 0; display: flex; flex-direction: column;">
+          <div style="flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: space-between;">
+
+            <!-- Row 1: Team velocity -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10M12 7v10"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="display: flex; align-items: baseline; gap: 4pt;">
+                  <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                </div>
+                <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Team velocity of execution</p>
+              </div>
+            </div>
+
+            <!-- Row 2: Customers onboarded -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="display: flex; align-items: baseline; gap: 4pt;">
+                  <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-negative); font-weight: bold;">&#x25BC;+XXX</p>
+                </div>
+                <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Number of customers onboarded</p>
+              </div>
+            </div>
+
+            <!-- Row 3: Orders placed (2 sub) -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0; display: flex; flex-direction: row; gap: 4pt;">
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Orders placed on the platform</p>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Orders placed off the platform</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 4: Acquisition cost -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="display: flex; align-items: baseline; gap: 4pt;">
+                  <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                </div>
+                <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Acquisition cost</p>
+              </div>
+            </div>
+
+            <!-- Row 5: Pool of non ordering -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><line x1="2" y1="6" x2="22" y2="6" stroke-dasharray="3,2"/><line x1="2" y1="12" x2="22" y2="12" stroke-dasharray="3,2"/><line x1="2" y1="18" x2="22" y2="18" stroke-dasharray="3,2"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="display: flex; align-items: baseline; gap: 4pt;">
+                  <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">2.1</p>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-negative); font-weight: bold;">&#x25BC;+XXX</p>
+                </div>
+                <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Pool of non ordering customers <span style="text-decoration: underline;">since</span> 12 months</p>
+              </div>
+            </div>
+
+            <!-- Row 6: Revenue (3 sub) -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/></g><text x="12" y="16" text-anchor="middle" font-size="12" fill="var(--brand-text-secondary)" font-family="Arial">&#8364;</text></svg>
+              </div>
+              <div style="flex: 1; min-width: 0; display: flex; flex-direction: row; gap: 3pt;">
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">0</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Revenue from new customers</p>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">57.2</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-negative); font-weight: bold;">&#x25BC;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Revenue from existing customers</p>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">0</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Cross selling revenue</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 7: Additional services revenue -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><circle cx="12" cy="16" r="3"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div style="display: flex; align-items: baseline; gap: 4pt;">
+                  <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">0</p>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+0</p>
+                </div>
+                <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Revenue from additional services</p>
+              </div>
+            </div>
+
+            <!-- Row 8: Support resolution (2 sub) -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0; display: flex; flex-direction: row; gap: 4pt;">
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Technical support resolution time</p>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Supply chain support resolution time</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 9: Delivery (2 sub) -->
+            <div style="display: flex; align-items: center; gap: 3pt; padding: 2pt 0;">
+              <div style="width: 18pt; height: 18pt; min-width: 18pt; border-radius: 50%; background: var(--brand-gray-medium); display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" style="width: 11px; height: 11px;"><g fill="none" stroke="var(--brand-text-secondary)" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16,8 20,8 23,11 23,16 16,16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></g></svg>
+              </div>
+              <div style="flex: 1; min-width: 0; display: flex; flex-direction: row; gap: 4pt;">
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-positive); font-weight: bold;">&#x25B2;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Average delivery time</p>
+                </div>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="display: flex; align-items: baseline; gap: 2pt;">
+                    <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-text);">XXX</p>
+                    <p style="margin: 0; font-size: 9px; color: var(--brand-negative); font-weight: bold;">&#x25BC;+XXX</p>
+                  </div>
+                  <p style="margin: 0; font-size: 9px; color: var(--brand-text); line-height: 1.15;">Average delay on delivery</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">SOURCE: Team analysis</p>
+    <p class="page-num">Nexus | 10</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

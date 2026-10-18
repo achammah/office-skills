@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head><title>RNA Score and Cost Restaurant Classification</title></head>
+<body class="brand-slide" data-layout="comparison-grid">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">Combining RNA score with cost allows us to classify the best restaurants for different occasions</h1>
+  </div>
+  <div class="content-zone">
+    <div style="display: flex; gap: 12pt; height: 318pt;">
+      <div style="flex: 62; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 6pt 14pt; min-height: 26pt;">
+          <p style="margin: 0; font-size: 13px; font-weight: bold; color: var(--brand-primary);">Cost</p>
+          <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);">Yelp.com</p>
+        </div>
+        <div style="flex: 1; display: flex; gap: 0pt;">
+          <div style="width: 38pt; display: flex; flex-direction: column;">
+            <div style="flex: 1; display: flex; align-items: center; padding-left: 4pt;"><p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">$$$$</p></div>
+            <div style="flex: 1; display: flex; align-items: center; padding-left: 4pt;"><p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">$$$</p></div>
+            <div style="flex: 1; display: flex; align-items: center; padding-left: 4pt;"><p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">$$</p></div>
+            <div style="flex: 1; display: flex; align-items: center; padding-left: 4pt;"><p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">$</p></div>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <div style="flex: 1; display: flex; flex-direction: column; border: 1px solid var(--brand-gray-medium);">
+              <div style="flex: 1; display: flex; gap: 0pt; border-bottom: 1px solid var(--brand-gray-medium);">
+                <!-- Top-left quadrant: Overpriced & overrated (triangles) -->
+                <div style="flex: 1; position: relative; border-right: 1px solid var(--brand-gray-medium); background: var(--brand-surface-light); overflow: visible;">
+                  <div style="position: relative; overflow: visible;"><svg width="100%" height="22" viewBox="0 0 220 22" preserveAspectRatio="none" style="display: block;"><polygon points="-12,22 8,0 220,0 220,22" fill="#2E75B6"/></svg><p style="position: absolute; top: 3pt; left: 14pt; margin: 0; font-size: 11px; font-weight: bold; font-style: italic; color: white;">"Overpriced &amp; overrated"</p></div>
+                  <div style="position: absolute; top: 30pt; left: 8pt;"><p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-primary);"><span>&#9650;</span><span>&#9650;</span> Chicago Cut</p></div>
+                  <div style="position: absolute; top: 30pt; right: 6pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9650;</span>Mastro's</p><p style="margin: 0; font-size: 9px; color: var(--brand-primary); padding-left: 10pt;">Steakhouse</p></div>
+                  <div style="position: absolute; bottom: 10pt; left: 20pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Henri</p></div>
+                  <div style="position: absolute; top: 42pt; left: 58pt; width: 1px; height: 22pt; border-left: 1px solid var(--brand-primary);"></div>
+                </div>
+                <!-- Top-right quadrant: Epic team dinner (circles) -->
+                <div style="flex: 1; position: relative; background: var(--brand-surface-light); overflow: visible;">
+                  <div style="position: relative; overflow: visible;"><svg width="100%" height="22" viewBox="0 0 220 22" preserveAspectRatio="none" style="display: block;"><polygon points="-12,22 8,0 220,0 220,22" fill="#2E75B6"/></svg><p style="position: absolute; top: 3pt; left: 14pt; margin: 0; font-size: 11px; font-weight: bold; font-style: italic; color: white;">"Epic team dinner"</p></div>
+                  <div style="position: absolute; top: 28pt; left: 16pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9679;</span></p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Charlie</p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Trotter's</p></div>
+                  <div style="position: absolute; top: 28pt; right: 6pt; display: flex; gap: 2pt; align-items: center;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9679;</span></p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Alinea</p></div>
+                  <div style="position: absolute; bottom: 22pt; left: 12pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Japonais</p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9679;</span></p></div>
+                  <div style="position: absolute; bottom: 8pt; right: 6pt;"><div style="display: flex; gap: 2pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9679;</span></p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Girl and</p></div><p style="margin: 0; font-size: 9px; color: var(--brand-primary); padding-left: 10pt;">the Goat</p></div>
+                </div>
+              </div>
+              <div style="flex: 1; display: flex; gap: 0pt;">
+                <!-- Bottom-left quadrant: A dime a dozen (diamonds) -->
+                <div style="flex: 1; position: relative; border-right: 1px solid var(--brand-gray-medium); background: var(--brand-surface-light); overflow: visible;">
+                  <div style="position: relative; overflow: visible;"><svg width="100%" height="22" viewBox="0 0 220 22" preserveAspectRatio="none" style="display: block;"><polygon points="-12,22 8,0 220,0 220,22" fill="#2E75B6"/></svg><p style="position: absolute; top: 3pt; left: 14pt; margin: 0; font-size: 11px; font-weight: bold; font-style: italic; color: white;">"A dime a dozen"</p></div>
+                  <div style="position: absolute; top: 34pt; left: 14pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9670;</span></p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Ruxbin</p></div>
+                  <div style="position: absolute; top: 28pt; right: 10pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Big Star</p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9670;</span><span>&#9670;</span></p></div>
+                  <div style="position: absolute; bottom: 16pt; right: 10pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9670;</span></p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Coast</p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Sushi</p></div>
+                </div>
+                <!-- Bottom-right quadrant: Diamonds in the rough (squares) -->
+                <div style="flex: 1; position: relative; background: var(--brand-surface-light); overflow: visible;">
+                  <div style="position: relative; overflow: visible;"><svg width="100%" height="22" viewBox="0 0 220 22" preserveAspectRatio="none" style="display: block;"><polygon points="-12,22 8,0 220,0 220,22" fill="#2E75B6"/></svg><p style="position: absolute; top: 3pt; left: 14pt; margin: 0; font-size: 11px; font-weight: bold; font-style: italic; color: white;">"Diamonds in the rough"</p></div>
+                  <div style="position: absolute; top: 24pt; left: 8pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Gilt Bar</p></div>
+                  <div style="position: absolute; top: 34pt; left: 8pt;"><div style="display: flex; gap: 2pt;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9632;</span></p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9632;</span></p></div><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Quartino</p></div>
+                  <div style="position: absolute; top: 28pt; right: 8pt; display: flex; gap: 2pt; align-items: center;"><p style="margin: 0; font-size: 9px; color: var(--brand-primary);"><span>&#9632;</span></p><p style="margin: 0; font-size: 9px; color: var(--brand-primary);">Hub 51</p></div>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 8pt; justify-content: space-between; padding: 3pt 4pt 0 4pt; min-height: 26pt;">
+              <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Low</p>
+              <div style="text-align: right;"><p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">High</p><p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">RNA Score</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="flex: 38; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-primary); padding: 6pt 14pt; min-height: 26pt;"><p style="margin: 0; font-size: 13px; font-weight: bold; color: white;">Key takeaway</p></div>
+        <div style="flex: 1; padding: 8pt 10pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="margin-bottom: 10pt; font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 14pt; line-height: 1.4;"><span style="position: absolute; left: 0; top: 0;">&#8226;</span><strong style="color: var(--brand-primary); text-decoration: underline;">"Diamonds in the rough" deliver the best value for team events</strong>, with Gilt Bar, Quartino, and Hub 51 achieving high RNA scores at just $$ price points</li>
+            <li style="margin-bottom: 10pt; font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 14pt; line-height: 1.4;"><span style="position: absolute; left: 0; top: 0;">&#8226;</span><strong style="color: var(--brand-primary); text-decoration: underline;">Premium pricing does not guarantee quality:</strong> 3 of the 6 $$$$ restaurants (Chicago Cut, Mastro's, Henri) fall into the "overpriced &amp; overrated" category</li>
+            <li style="margin-bottom: 10pt; font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 14pt; line-height: 1.4;"><span style="position: absolute; left: 0; top: 0;">&#8226;</span><strong style="color: var(--brand-primary); text-decoration: underline;">The "epic team dinner" quadrant is dominated by experiential dining</strong>, with Alinea and Girl and the Goat justifying $$$$/$$$ costs through top-tier RNA performance</li>
+            <li style="margin-bottom: 0; font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 14pt; line-height: 1.4;"><span style="position: absolute; left: 0; top: 0;">&#8226;</span><strong style="color: var(--brand-primary); text-decoration: underline;">Budget options show clear differentiation:</strong> at the $$ level, RNA score separates high-performers (Gilt Bar, Hub 51) from generic alternatives (Ruxbin, Coast Sushi)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-zone">
+    <p class="source"></p>
+    <p class="page-num">Nexus | 70</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

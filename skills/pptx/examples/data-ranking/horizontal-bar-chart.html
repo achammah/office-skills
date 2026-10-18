@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head><title>Global M&A deals by region and size</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">M&A activity declined across all regions yet shares stayed stable</h1>
+    <p style="margin: 4pt 0 0 0; font-size: 11px; color: var(--brand-gray-dark);">Global M&A deals by region and size, 2012-16</p>
+  </div>
+
+  <div class="content-zone">
+    <div style="display: flex; gap: 14pt; width: 100%; flex: 1;">
+
+      <!-- Left: Bordered container with charts and data table -->
+      <div style="flex: 80; border: 1.5px solid var(--brand-surface-light); overflow: hidden; display: flex; flex-direction: column;">
+
+        <!-- Section 1: Deals by geography -->
+        <div style="background: var(--brand-surface-light); padding: 3pt 14pt;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Deals by geography</p>
+          <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-gray-dark);">Value&#185; $ bn, % of total</p>
+        </div>
+        <div style="position: relative; padding: 0 6pt;">
+          <!-- HTML legend (absolutely positioned, placed after chart for validator) -->
+          <h3 style="margin: 0; font-size: 0; height: 0; visibility: hidden;">Deals by geography chart</h3>
+          <div data-echarts='{
+            "grid": {"left": 10, "right": 10, "top": 25, "bottom": 5, "containLabel": true},
+            "xAxis": {
+              "type": "category",
+              "data": ["2012", "2013", "2014", "2015", "2016"],
+              "axisLabel": {"fontSize": 9, "color": "#333333", "fontWeight": "bold"},
+              "axisLine": {"show": true, "lineStyle": {"color": "#999999"}},
+              "axisTick": {"show": false}
+            },
+            "yAxis": {
+              "type": "value",
+              "show": false,
+              "max": 5200
+            },
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "EMEA",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "#2E75B6"},
+                "label": {"show": true, "position": "inside", "color": "#FFFFFF", "fontSize": 7},
+                "data": [
+                  {"value": 761, "label": {"formatter": "$761 (30%)"}},
+                  {"value": 805, "label": {"formatter": "$805 (30%)"}},
+                  {"value": 970, "label": {"formatter": "$970 (28%)"}},
+                  {"value": 1063, "label": {"formatter": "$1,063 (23%)"}},
+                  {"value": 981, "label": {"formatter": "$981 (26%)"}}
+                ]
+              },
+              {
+                "name": "Americas",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "#1E3A5F"},
+                "label": {"show": true, "position": "inside", "color": "#FFFFFF", "fontSize": 7},
+                "data": [
+                  {"value": 1237, "label": {"formatter": "$1,237 (49%)"}},
+                  {"value": 1297, "label": {"formatter": "$1,297 (48%)"}},
+                  {"value": 1735, "label": {"formatter": "$1,735 (49%)"}},
+                  {"value": 2316, "label": {"formatter": "$2,316 (51%)"}},
+                  {"value": 1891, "label": {"formatter": "$1,891 (50%)"}}
+                ]
+              },
+              {
+                "name": "APAC",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "#5B9BD5"},
+                "label": {"show": true, "position": "inside", "color": "#FFFFFF", "fontSize": 7},
+                "data": [
+                  {"value": 507, "label": {"formatter": "$507 (20%)"}},
+                  {"value": 572, "label": {"formatter": "$572 (21%)"}},
+                  {"value": 808, "label": {"formatter": "$808 (23%)"}},
+                  {"value": 1182, "label": {"formatter": "$1,182 (26%)"}},
+                  {"value": 906, "label": {"formatter": "$906 (24%)"}}
+                ]
+              },
+              {
+                "name": "",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "transparent"},
+                "emphasis": {"disabled": true},
+                "label": {"show": false},
+                "data": [
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$2,505", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$2,674", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$3,513", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$4,561", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$3,778", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}}
+                ]
+              }
+            ]
+          }' style="width: 100%; height: 85pt;"></div>
+          <div style="position: absolute; top: 4pt; right: 10pt; display: flex; gap: 10pt; z-index: 5;">
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <div style="width: 12pt; height: 8pt; background: #2E75B6;"></div>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text);">EMEA</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <div style="width: 12pt; height: 8pt; background: #1E3A5F;"></div>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text);">Americas</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <div style="width: 12pt; height: 8pt; background: #5B9BD5;"></div>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text);">APAC</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Deals by size -->
+        <div style="background: var(--brand-surface-light); padding: 3pt 14pt;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Deals by size</p>
+          <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-gray-dark);">Value&#185; $ bn, % of total</p>
+        </div>
+        <div style="position: relative; padding: 0 6pt;">
+          <h3 style="margin: 0; font-size: 0; height: 0; visibility: hidden;">Deals by size chart</h3>
+          <div data-echarts='{
+            "grid": {"left": 10, "right": 10, "top": 25, "bottom": 5, "containLabel": true},
+            "xAxis": {
+              "type": "category",
+              "data": ["2012", "2013", "2014", "2015", "2016"],
+              "axisLabel": {"fontSize": 9, "color": "#333333", "fontWeight": "bold"},
+              "axisLine": {"show": true, "lineStyle": {"color": "#999999"}},
+              "axisTick": {"show": false}
+            },
+            "yAxis": {
+              "type": "value",
+              "show": false,
+              "max": 5200
+            },
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "<$1bn",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "#5B9BD5"},
+                "label": {"show": true, "position": "inside", "color": "#FFFFFF", "fontSize": 7},
+                "data": [
+                  {"value": 1096, "label": {"formatter": "$1,096 (44%)"}},
+                  {"value": 1120, "label": {"formatter": "$1,120 (42%)"}},
+                  {"value": 1218, "label": {"formatter": "$1,218 (35%)"}},
+                  {"value": 1316, "label": {"formatter": "$1,316 (29%)"}},
+                  {"value": 1267, "label": {"formatter": "$1,267 (34%)"}}
+                ]
+              },
+              {
+                "name": "$1bn-$10bn",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "#2E75B6"},
+                "label": {"show": true, "position": "inside", "color": "#FFFFFF", "fontSize": 7},
+                "data": [
+                  {"value": 1064, "label": {"formatter": "$1,064 (42%)"}},
+                  {"value": 1110, "label": {"formatter": "$1,110 (42%)"}},
+                  {"value": 1468, "label": {"formatter": "$1,468 (42%)"}},
+                  {"value": 1702, "label": {"formatter": "$1,702 (37%)"}},
+                  {"value": 1571, "label": {"formatter": "$1,571 (42%)"}}
+                ]
+              },
+              {
+                "name": ">$10bn",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "#1E3A5F"},
+                "label": {"show": true, "position": "inside", "color": "#FFFFFF", "fontSize": 7},
+                "data": [
+                  {"value": 345, "label": {"formatter": "$345 (14%)"}},
+                  {"value": 444, "label": {"formatter": "$444 (17%)"}},
+                  {"value": 827, "label": {"formatter": "$827 (24%)"}},
+                  {"value": 1543, "label": {"formatter": "$1,543 (34%)"}},
+                  {"value": 940, "label": {"formatter": "$940 (25%)"}}
+                ]
+              },
+              {
+                "name": "",
+                "type": "bar",
+                "stack": "total",
+                "barWidth": "55%",
+                "itemStyle": {"color": "transparent"},
+                "emphasis": {"disabled": true},
+                "label": {"show": false},
+                "data": [
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$2,505", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$2,674", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$3,513", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$4,562", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}},
+                  {"value": 1, "label": {"show": true, "position": "top", "formatter": "$3,778", "fontSize": 9, "fontWeight": "bold", "color": "#1E3A5F"}}
+                ]
+              }
+            ]
+          }' style="width: 100%; height: 85pt;"></div>
+          <div style="position: absolute; top: 4pt; right: 10pt; display: flex; gap: 10pt; z-index: 5;">
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <div style="width: 12pt; height: 8pt; background: #1E3A5F;"></div>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text);">&gt;$10bn</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <div style="width: 12pt; height: 8pt; background: #2E75B6;"></div>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text);">$1bn-$10bn</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <div style="width: 12pt; height: 8pt; background: #5B9BD5;"></div>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text);">&lt;$1bn</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Data table -->
+        <div style="background: var(--brand-surface-light); padding: 3pt 14pt;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Number of deals per size bracket</p>
+        </div>
+        <div style="padding: 3pt 10pt;">
+          <div style="display: flex; align-items: center; padding: 2pt 0;">
+            <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-gray-dark); width: 65pt; flex-shrink: 0;">&gt;$10bn</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">17</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">18</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">35</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">58</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">35</p>
+          </div>
+          <div style="display: flex; align-items: center; padding: 2pt 0;">
+            <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-gray-dark); width: 65pt; flex-shrink: 0;">$1bn-$10bn</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">465</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">481</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">570</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">647</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">696</p>
+          </div>
+          <div style="display: flex; align-items: center; padding: 2pt 0;">
+            <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-gray-dark); width: 65pt; flex-shrink: 0;">&lt;$1bn</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">6,851</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">6,462</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">7,012</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">7,742</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-text); flex: 1; text-align: center;">7,420</p>
+          </div>
+          <div style="display: flex; align-items: center; padding: 2pt 0 0 0;">
+            <div style="width: 65pt; flex-shrink: 0;"></div>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-gray-dark); flex: 1; text-align: center;">2012</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-gray-dark); flex: 1; text-align: center;">2013</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-gray-dark); flex: 1; text-align: center;">2014</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-gray-dark); flex: 1; text-align: center;">2015</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-gray-dark); flex: 1; text-align: center;">2016</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Dark navy takeaway box with darker header -->
+      <div style="flex: 20; background: var(--brand-primary); border-radius: 3pt; display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: #132B4D; padding: 8pt 12pt;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: white;">Key takeaways</p>
+        </div>
+        <div style="flex: 1; padding: 10pt 12pt; display: flex; flex-direction: column; justify-content: space-between;">
+          <ul style="margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+            <li style="font-size: 10px; color: white; line-height: 1.45; position: relative; padding-left: 12pt;">
+              <span style="position: absolute; left: 0;">&#9632;</span>
+              <strong>All regions saw a drop in activity</strong> in absolute deal value terms in 2016; fall of 18% in Americas, 23% in Asia-Pacific and 8% in EMEA in 2016 versus 2015
+            </li>
+            <li style="font-size: 10px; color: white; line-height: 1.45; position: relative; padding-left: 12pt;">
+              <span style="position: absolute; left: 0;">&#9632;</span>
+              <strong>Breakdown by regions in 2016</strong> saw a slight decrease for Americas (50% vs 51%) and APAC (24% vs 26%) but an increase in EMEA (26% vs 23%)
+            </li>
+            <li style="font-size: 10px; color: white; line-height: 1.45; position: relative; padding-left: 12pt;">
+              <span style="position: absolute; left: 0;">&#9632;</span>
+              <strong>Value of megadeals</strong> (greater than $10 bn) saw a significant decrease (-40%) from 2015 level and also its share of global M&A activity fell from 34% to 25%
+            </li>
+            <li style="font-size: 10px; color: white; line-height: 1.45; position: relative; padding-left: 12pt;">
+              <span style="position: absolute; left: 0;">&#9632;</span>
+              <strong>Total value of midsize and small size</strong> (lower than $1 bn) deals slightly decreased respectively by (8%) and by (4%) vs. 2015
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">&#185; Includes deals more than $250 mln only; SOURCE: Dealogic</p>
+    <p class="page-num">Nexus | 5</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

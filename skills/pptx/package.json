@@ -1,0 +1,14 @@
+{
+  "name": "pptx-skill",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PPTX creation, editing, and analysis skill with data visualization support",
+  "dependencies": {
+    "@img/sharp-darwin-arm64": "^0.34.5",
+    "echarts": "6.0.0",
+    "jsdom": "^27.4.0",
+    "playwright": "^1.40.0",
+    "pptxgenjs": "^3.12.0",
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "runCount": 39,
+  "errors": {
+    "vertical-bar-chart.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resize": {
+      "tag": "GENERAL",
+      "file": "vertical-bar-chart.html",
+      "message": "Content height estimated at ~392pt (max ~325pt usable). Fix priority: (1) resize containers with flex:1, (2) reduce fonts toward 9px min, (3) reduce padding, (4) reduce content, (5) split slides.",
+      "fix": null,
+      "firstSeenRun": 39,
+      "lastSeenRun": 39,
+      "attempts": 1
+    },
+    "vertical-bar-chart.html:[GENERAL]:Title zone: Decorative colored element detected. BLOCKING — No decorative bars/i": {
+      "tag": "GENERAL",
+      "file": "vertical-bar-chart.html",
+      "message": "Title zone: Decorative colored element detected. BLOCKING — No decorative bars/icons in title zone. REMOVE the decorative element. See slide_standardisation.md Section 1.",
+      "fix": null,
+      "firstSeenRun": 39,
+      "lastSeenRun": 39,
+      "attempts": 2
+    },
+    "vertical-bar-chart.html:[FLEX-STACK]:Flex column has flex:N child + non-flex text sibling (child N: \"Prioritization o": {
+      "tag": "FLEX-STACK",
+      "file": "vertical-bar-chart.html",
+      "message": "Flex column has flex:1 child + non-flex text sibling (child 1: \"Prioritization of functionalities based ...\"). flex:1 consumes ALL space, squeezing text to zero height. FIX: add min-height to text sibling OR remove flex:1 and use explicit heights.",
+      "fix": null,
+      "firstSeenRun": 39,
+      "lastSeenRun": 39,
+      "attempts": 1
+    },
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#N\". Use brand token var(--brand-tex": {
+      "tag": "HARDCODED-HEX",
+      "file": "vertical-bar-chart.html",
+      "message": "Chart 1: contains hardcoded hex color \"#666666\". Use brand token var(--brand-text-secondary) instead. ALL colors in data-echarts configs must use var(--brand-*) tokens — render_echarts.mjs resolves them automatically.",
+      "fix": null,
+      "firstSeenRun": 39,
+      "lastSeenRun": 39,
+      "attempts": 2
+    },
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#NENBN\". Use brand token var(--brand-sec": {
+      "tag": "HARDCODED-HEX",
+      "file": "vertical-bar-chart.html",
+      "message": "Chart 1: contains hardcoded hex color \"#2E75B6\". Use brand token var(--brand-secondary) instead. ALL colors in data-echarts configs must use var(--brand-*) tokens — render_echarts.mjs resolves them automatically.",
+      "fix": null,
+      "firstSeenRun": 39,
+      "lastSeenRun": 39,
+      "attempts": 1
+    },
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#NENANF\". Use brand token var(--brand-pri": {
+      "tag": "HARDCODED-HEX",
+      "file": "vertical-bar-chart.html",
+      "message": "Chart 1: contains hardcoded hex color \"#1E3A5F\". Use brand token var(--brand-primary) instead. ALL colors in data-echarts configs must use var(--brand-*) tokens — render_echarts.mjs resolves them automatically.",
+      "fix": null,
+      "firstSeenRun": 39,
+      "lastSeenRun": 39,
+      "attempts": 1
+    },
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#ANCNEN\". Use brand token var(--brand-qua": {
+      "tag": "HARDCODED-HEX",
+      "file": "vertical-bar-chart.html",
+      "message": "Chart 1: contains hardcoded hex color \"#A8C8E8\". Use brand token var(--brand-quaternary) instead. ALL colors in data-echarts configs must use var(--brand-*) tokens — render_echarts.mjs resolves them automatically.",
+      "fix": null,
+      "firstSeenRun": 39,
+      "lastSeenRun": 39,
+      "attempts": 1
+    }
+  },
+  "previousRunErrorKeys": [
+    "vertical-bar-chart.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resize",
+    "vertical-bar-chart.html:[GENERAL]:Title zone: Decorative colored element detected. BLOCKING — No decorative bars/i",
+    "vertical-bar-chart.html:[FLEX-STACK]:Flex column has flex:N child + non-flex text sibling (child N: \"Prioritization o",
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#N\". Use brand token var(--brand-tex",
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#NENBN\". Use brand token var(--brand-sec",
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#NENANF\". Use brand token var(--brand-pri",
+    "vertical-bar-chart.html:[HARDCODED-HEX]:Chart N: contains hardcoded hex color \"#ANCNEN\". Use brand token var(--brand-qua"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:56:15.879Z"
+}

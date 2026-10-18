@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head><title>Nexus has a history of innovation</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <!-- Title zone -->
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading); line-height: 1.25;">Nexus has a history of innovation &#8211;<br>30% of Nexus today was 70% twenty years ago</h1>
+  </div>
+
+  <div class="content-zone" style="display: flex; flex-direction: column;">
+    <!-- Floating teal subtitle (no Container Box around it) -->
+    <p style="margin: 0 0 2pt 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal); line-height: 1.3;">Historical view,<br>client service hours</p>
+
+    <!-- Body: chart + right annotation panel -->
+    <div style="flex: 1; display: flex; gap: 0pt;">
+      <!-- Chart area (flex:72) - matches inspiration's ~72% width -->
+      <div style="flex: 72; position: relative; display: flex; flex-direction: column;">
+        <p style="margin: 0; font-size: 9px; color: transparent;">Stacked area chart spacer</p>
+        <div data-echarts='{
+          "xAxis": {
+            "type": "category",
+            "data": ["1990"," "," "," "," "," "," "," "," "," ","2000"," "," "," "," "," "," "," "," "," ","2010"," "," "," "],
+            "boundaryGap": false,
+            "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-dark)", "width": 1}},
+            "axisTick": {"show": false},
+            "axisLabel": {
+              "show": true,
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "color": "var(--brand-text)",
+              "rotate": 0,
+              "interval": 0
+            },
+            "splitLine": {"show": false}
+          },
+          "yAxis": {
+            "type": "value",
+            "show": false,
+            "min": 0,
+            "axisLine": {"show": false},
+            "axisTick": {"show": false},
+            "axisLabel": {"show": false},
+            "splitLine": {"show": false}
+          },
+          "grid": {
+            "left": 18,
+            "right": 8,
+            "top": 8,
+            "bottom": 32
+          },
+          "legend": {"show": false},
+          "tooltip": {"show": false},
+          "series": [
+            {
+              "name": "Traditional Core Functions",
+              "type": "line",
+              "stack": "total",
+              "areaStyle": {"color": "var(--brand-primary)"},
+              "lineStyle": {"width": 0},
+              "itemStyle": {"color": "var(--brand-primary)"},
+              "showSymbol": false,
+              "symbol": "none",
+              "label": {"show": false},
+              "data": [355,370,385,400,410,415,420,425,440,460,450,430,405,380,360,340,320,305,290,280,270,260,250,245],
+              "markPoint": {
+                "data": [
+                  {
+                    "coord": [18, 130],
+                    "symbol": "rect",
+                    "symbolSize": 0,
+                    "label": {
+                      "show": true,
+                      "formatter": "\u201cTRADITIONAL CORE\u201d\nFUNCTIONS",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                      "color": "white",
+                      "lineHeight": 18
+                    }
+                  }
+                ]
+              },
+              "markLine": {
+                "symbol": ["arrow", "arrow"],
+                "symbolSize": [8, 8],
+                "symbolRotate": 180,
+                "data": [
+                  [
+                    {"coord": [0, 5], "symbol": "arrow", "symbolSize": 8},
+                    {"coord": [0, 490], "symbol": "arrow", "symbolSize": 8}
+                  ]
+                ],
+                "lineStyle": {
+                  "color": "var(--brand-accent-teal)",
+                  "width": 1.5
+                },
+                "label": {"show": false},
+                "animation": false
+              }
+            },
+            {
+              "name": "Growth Functions",
+              "type": "line",
+              "stack": "total",
+              "areaStyle": {"color": "var(--brand-secondary)"},
+              "lineStyle": {"width": 0},
+              "itemStyle": {"color": "var(--brand-secondary)"},
+              "showSymbol": false,
+              "symbol": "none",
+              "label": {"show": false},
+              "data": [135,142,148,168,185,210,240,280,320,350,370,365,355,340,325,310,295,285,275,265,260,255,250,245],
+              "markPoint": {
+                "data": [
+                  {
+                    "coord": [18, 400],
+                    "symbol": "rect",
+                    "symbolSize": 0,
+                    "label": {
+                      "show": true,
+                      "formatter": "GROWTH\nFUNCTIONS",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                      "color": "var(--brand-primary)",
+                      "lineHeight": 18
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "Growth Sectors",
+              "type": "line",
+              "stack": "total",
+              "areaStyle": {"color": "var(--brand-accent-teal)"},
+              "lineStyle": {"width": 0},
+              "itemStyle": {"color": "var(--brand-accent-teal)"},
+              "showSymbol": false,
+              "symbol": "none",
+              "label": {"show": false},
+              "data": [5,6,12,14,16,22,26,30,40,44,48,55,60,65,72,78,82,88,90,92,92,92,95,95],
+              "markPoint": {
+                "data": [
+                  {
+                    "coord": [18, 580],
+                    "symbol": "rect",
+                    "symbolSize": 0,
+                    "label": {
+                      "show": true,
+                      "formatter": "GROWTH\nSECTORS",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                      "color": "white",
+                      "lineHeight": 18
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "New Markets",
+              "type": "line",
+              "stack": "total",
+              "areaStyle": {"color": "var(--brand-tertiary)"},
+              "lineStyle": {"width": 0},
+              "itemStyle": {"color": "var(--brand-tertiary)"},
+              "showSymbol": false,
+              "symbol": "none",
+              "label": {"show": false},
+              "data": [5,12,20,32,55,72,95,115,140,130,150,160,165,180,195,210,235,240,250,260,268,275,282,290],
+              "markPoint": {
+                "data": [
+                  {
+                    "coord": [18, 755],
+                    "symbol": "rect",
+                    "symbolSize": 0,
+                    "label": {
+                      "show": true,
+                      "formatter": "NEW\nMARKETS",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                      "color": "var(--brand-primary)",
+                      "lineHeight": 18
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }' style="width: 100%; flex: 1;"></div>
+      </div>
+
+      <!-- Right annotation panel (flex:28) - Container Box with border + header -->
+      <div style="flex: 28; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column;">
+        <!-- Container Box header bar -->
+        <div style="background: var(--brand-surface-light); padding: 5pt 8pt; min-height: 22pt; display: flex; align-items: center;">
+          <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-primary);">Share of total hours</p>
+        </div>
+
+        <!-- Container Box body: annotation groups with flex ratios -->
+        <div style="flex: 1; display: flex; flex-direction: column; padding: 4pt 6pt 4pt 4pt;">
+          <!-- NEW MARKETS (top band) -->
+          <div style="flex: 22; display: flex; flex-direction: column; justify-content: center; gap: 1pt;">
+            <p style="margin: 0; font-size: 10px; color: var(--brand-gray-dark); line-height: 1.25;">(ME, EE, S. Africa, Korea, SE Asia, India, China)</p>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">1<span style="font-size: 10px;">%</span></p>
+              <svg width="28pt" height="14pt" viewBox="0 0 28 14" style="flex-shrink: 0;">
+                <polygon points="0,3 17,3 17,0 28,7 17,14 17,11 0,11" fill="var(--brand-accent-teal)"/>
+              </svg>
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">22<span style="font-size: 10px;">%</span></p>
+            </div>
+          </div>
+
+          <!-- GROWTH SECTORS -->
+          <div style="flex: 12; display: flex; flex-direction: column; justify-content: center; gap: 1pt;">
+            <p style="margin: 0; font-size: 10px; color: var(--brand-gray-dark); line-height: 1.25;">(Healthcare, Public Sector, Social Sector)</p>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">1<span style="font-size: 10px;">%</span></p>
+              <svg width="28pt" height="14pt" viewBox="0 0 28 14" style="flex-shrink: 0;">
+                <polygon points="0,3 17,3 17,0 28,7 17,14 17,11 0,11" fill="var(--brand-accent-teal)"/>
+              </svg>
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">8<span style="font-size: 10px;">%</span></p>
+            </div>
+          </div>
+
+          <!-- GROWTH FUNCTIONS -->
+          <div style="flex: 35; display: flex; flex-direction: column; justify-content: center; gap: 1pt;">
+            <p style="margin: 0; font-size: 10px; color: var(--brand-gray-dark); line-height: 1.25;">(Ops, Marketing, BTO, Risk)</p>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">27<span style="font-size: 10px;">%</span></p>
+              <svg width="28pt" height="14pt" viewBox="0 0 28 14" style="flex-shrink: 0;">
+                <polygon points="0,3 17,3 17,0 28,7 17,14 17,11 0,11" fill="var(--brand-accent-teal)"/>
+              </svg>
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">39<span style="font-size: 10px;">%</span></p>
+            </div>
+          </div>
+
+          <!-- TRADITIONAL CORE FUNCTIONS -->
+          <div style="flex: 31; display: flex; flex-direction: column; justify-content: center; gap: 1pt;">
+            <p style="margin: 0; font-size: 10px; color: var(--brand-gray-dark); line-height: 1.25;">(Strategy, Org, CF)</p>
+            <div style="display: flex; align-items: center; gap: 4pt;">
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">71<span style="font-size: 10px;">%</span></p>
+              <svg width="28pt" height="14pt" viewBox="0 0 28 14" style="flex-shrink: 0;">
+                <polygon points="0,3 17,3 17,0 28,7 17,14 17,11 0,11" fill="var(--brand-accent-teal)"/>
+              </svg>
+              <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-accent-teal);">31<span style="font-size: 10px;">%</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">SOURCE: FSR Diagnostic Analysis</p>
+    <p class="page-num">Nexus | 56</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

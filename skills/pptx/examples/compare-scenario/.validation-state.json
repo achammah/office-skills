@@ -1,0 +1,18 @@
+{
+  "runCount": 2,
+  "errors": {
+    "grid-comparison.html:[GENERAL]:Content density: N bullets (max N — multi-panel layouts have N-N per panel)": {
+      "tag": "GENERAL",
+      "file": "grid-comparison.html",
+      "message": "Content density: 32 bullets (max 15 — multi-panel layouts have 3-5 per panel)",
+      "fix": null,
+      "firstSeenRun": 1,
+      "lastSeenRun": 2,
+      "attempts": 2
+    }
+  },
+  "previousRunErrorKeys": [
+    "grid-comparison.html:[GENERAL]:Content density: N bullets (max N — multi-panel layouts have N-N per panel)"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:55:24.267Z"
+}

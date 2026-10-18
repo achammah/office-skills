@@ -1,0 +1,18 @@
+{
+  "runCount": 4,
+  "errors": {
+    "standard.html:[GENERAL]:Content density: N bullets (max N — multi-panel layouts have N-N per panel)": {
+      "tag": "GENERAL",
+      "file": "standard.html",
+      "message": "Content density: 30 bullets (max 15 — multi-panel layouts have 3-5 per panel)",
+      "fix": null,
+      "firstSeenRun": 4,
+      "lastSeenRun": 4,
+      "attempts": 1
+    }
+  },
+  "previousRunErrorKeys": [
+    "standard.html:[GENERAL]:Content density: N bullets (max N — multi-panel layouts have N-N per panel)"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:56:48.823Z"
+}

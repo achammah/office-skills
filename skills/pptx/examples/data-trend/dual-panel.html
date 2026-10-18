@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head><title>SUPPLY - China controls current price dynamic</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone" style="position: relative;">
+    <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">SUPPLY</p>
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">With this relevant position, China controls the current price dynamic</h1>
+  </div>
+
+  <div class="content-zone" style="display: flex; flex-direction: column; gap: 6pt;">
+
+    <!-- Two chart panels side by side -->
+    <div style="display: flex; gap: 14pt; flex: 1;">
+
+      <!-- LEFT PANEL: Bar chart - Export quota evolution -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <!-- Header bar -->
+        <div style="background: var(--brand-surface-light); padding: 6pt 14pt; min-height: 32pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Export quota evolution of rare earth in China</p>
+          <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">Thousand tons</p>
+        </div>
+        <!-- Chart body -->
+        <div style="flex: 1; position: relative; padding: 0pt 6pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent;">Export quota bar chart showing decline from 62 to 31 thousand tons</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2006", "07", "08", "09", "10", "11", "2012"],
+              "axisLine": {"lineStyle": {"color": "var(--brand-primary)", "width": 2}},
+              "axisTick": {"show": false},
+              "axisLabel": {"fontSize": 10, "color": "var(--brand-text-body)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "max": 75,
+              "show": false
+            },
+            "grid": {
+              "left": 8,
+              "right": 40,
+              "top": 20,
+              "bottom": 30
+            },
+            "series": [{
+              "type": "bar",
+              "data": [62, 60, 50, 47, 30, 30, 31],
+              "barWidth": "55%",
+              "itemStyle": {
+                "color": "var(--brand-chart-4)"
+              },
+              "label": {
+                "show": true,
+                "position": "top",
+                "fontSize": 10,
+                "fontWeight": "bold",
+                "color": "var(--brand-text-body)"
+              },
+              "markLine": {
+                "symbol": ["none", "none"],
+                "data": [
+                  [
+                    {"xAxis": "08", "yAxis": 50},
+                    {"xAxis": "2012", "yAxis": 50}
+                  ],
+                  [
+                    {"xAxis": "10", "yAxis": 30},
+                    {"xAxis": "2012", "yAxis": 30}
+                  ],
+                  [
+                    {"xAxis": "2012", "yAxis": 50, "symbol": "none"},
+                    {"xAxis": "2012", "yAxis": 30, "symbol": "arrow",
+                      "label": {
+                        "formatter": "-40%",
+                        "backgroundColor": "var(--brand-surface-light)",
+                        "borderRadius": 12,
+                        "padding": [4, 10, 4, 10],
+                        "color": "var(--brand-primary)",
+                        "fontSize": 13,
+                        "fontWeight": "bold",
+                        "lineHeight": 13,
+                        "align": "center",
+                        "position": "middle"
+                      }
+                    }
+                  ]
+                ],
+                "lineStyle": {"color": "var(--brand-text-secondary)", "type": "dashed", "width": 1.5}
+              }
+            }]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL: Line chart - Prices of dysprosium oxide -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <!-- Header bar -->
+        <div style="background: var(--brand-surface-light); padding: 6pt 14pt; min-height: 32pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Prices of dysprosium oxide in China</p>
+          <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">$/kg</p>
+        </div>
+        <!-- Chart body -->
+        <div style="flex: 1; position: relative; padding: 0pt 6pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent;">Line chart showing dysprosium oxide price spike to 2000 $/kg in 2011</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2006", "07", "08", "09", "10", "11", "2012"],
+              "axisLine": {"lineStyle": {"color": "var(--brand-primary)", "width": 2}},
+              "axisTick": {"show": false},
+              "axisLabel": {"fontSize": 10, "color": "var(--brand-text-body)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "max": 2000,
+              "interval": 500,
+              "axisLabel": {"show": true, "fontSize": 10, "color": "var(--brand-text-body)"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-border)", "type": "dashed"}},
+              "axisLine": {"show": false},
+              "axisTick": {"show": false}
+            },
+            "grid": {
+              "left": 50,
+              "right": 170,
+              "top": 20,
+              "bottom": 30
+            },
+            "series": [{
+              "type": "line",
+              "data": [100, 110, 130, 100, 300, 1800, 800],
+              "symbol": "circle",
+              "symbolSize": 4,
+              "lineStyle": {"color": "var(--brand-primary)", "width": 2},
+              "itemStyle": {"color": "var(--brand-primary)"},
+              "markPoint": {
+                "data": [
+                  {"coord": ["2012", 800], "value": "800", "symbol": "none",
+                    "label": {"show": true, "position": "right", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-text-body)", "offset": [8, 0]}}
+                ]
+              },
+              "$callouts": [
+                {
+                  "dataIndex": 5,
+                  "text": "Peak of prices\ncaused by export\nquotas reduction",
+                  "position": "right",
+                  "offsetX": 20,
+                  "offsetY": -30
+                },
+                {
+                  "dataIndex": 6,
+                  "text": "Drop in 2012 as a\nresult of demand\ndecrease due to\nunsustainably high\nprices, but still\nsignificantly higher\nthan historical levels",
+                  "position": "right",
+                  "offsetX": 20,
+                  "offsetY": 30,
+                  "style": {
+                    "width": 140
+                  }
+                }
+              ]
+            }]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAKEAWAY BOX — flex-shrink:0 prevents over-expansion -->
+    <div style="background: var(--brand-primary); padding: 12pt 14pt; border-radius: 3pt; min-height: 92pt; flex-shrink: 0;">
+      <ul style="margin: 0; padding-left: 0; list-style: none;">
+        <li style="margin-bottom: 4pt; font-size: 10px; color: white; position: relative; padding-left: 14pt; line-height: 1.35;">
+          <span style="position: absolute; left: 0; color: white;">&#9632;</span>
+          <strong>In 2010, China tightened</strong> export quotas for heavy and light rare earths; in the future:
+        </li>
+        <li style="margin-bottom: 3pt; font-size: 9px; color: white; position: relative; padding-left: 26pt; line-height: 1.35;">
+          <span style="position: absolute; left: 14pt; color: white;">&#8211;</span>
+          <strong>Light quotas could be eliminated</strong> as new light REO sources are coming online
+        </li>
+        <li style="margin-bottom: 3pt; font-size: 9px; color: white; position: relative; padding-left: 26pt; line-height: 1.35;">
+          <span style="position: absolute; left: 14pt; color: white;">&#8211;</span>
+          <strong>Heavy quotas should remain</strong> as China does not have enough reserves and few new heavy rare earth sources are coming online in the future
+        </li>
+        <li style="margin-bottom: 0pt; font-size: 10px; color: white; position: relative; padding-left: 14pt; line-height: 1.35;">
+          <span style="position: absolute; left: 0; color: white;">&#9632;</span>
+          <strong>If China acts rationally,</strong> it will look to maximize profits which would maintain prices at higher than historical levels letting smaller players into the market. However they hold the power to avoid the entry of other players if they wanted to.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">SOURCE: MOFCOM, Press search</p>
+    <p class="page-num">Nexus | 38</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

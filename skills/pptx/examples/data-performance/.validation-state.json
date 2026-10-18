@@ -1,0 +1,18 @@
+{
+  "runCount": 4,
+  "errors": {
+    "kpi-dashboard.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resize": {
+      "tag": "GENERAL",
+      "file": "kpi-dashboard.html",
+      "message": "Content height estimated at ~692pt (max ~325pt usable). Fix priority: (1) resize containers with flex:1, (2) reduce fonts toward 9px min, (3) reduce padding, (4) reduce content, (5) split slides.",
+      "fix": null,
+      "firstSeenRun": 4,
+      "lastSeenRun": 4,
+      "attempts": 1
+    }
+  },
+  "previousRunErrorKeys": [
+    "kpi-dashboard.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resize"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:56:00.912Z"
+}

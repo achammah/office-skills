@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head><title>Title of the slide</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">Title of the slide</h1>
+  </div>
+  <div class="content-zone" style="display: flex; flex-direction: column; gap: 6pt;">
+    <!-- Main row: flex:1 to fill available space -->
+    <div style="display: flex; gap: 0pt; align-items: stretch; flex: 1;">
+      <!-- LEFT PANEL: Chart explanation (Container Box) -->
+      <div style="flex: 55; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column;">
+        <!-- Header bar -->
+        <div style="background: var(--brand-surface-light); padding: 6pt 14pt; min-height: 22pt; display: flex; align-items: center;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Chart explanation</p>
+        </div>
+        <!-- Chart body -->
+        <div style="flex: 1; padding: 4pt 8pt 4pt 6pt; display: flex; flex-direction: column; position: relative;">
+          <!-- USD Millions label -->
+          <p style="margin: 0 0 2pt 0; font-size: 9px; color: var(--brand-gray-dark);">USD Millions</p>
+          <!-- Chart area -->
+          <!-- Bar2=180pt, Bar1=97pt, axis baseline+label=18pt -->
+          <div style="display: flex; gap: 0pt; flex: 1; position: relative; align-items: stretch;">
+            <!-- Category labels: aligned to bar1 segment centers -->
+            <!-- Bar1: Fee=22pt, Float=36pt, NII=39pt = 97pt total -->
+            <div style="flex: 2.2; position: relative;">
+              <p style="position: absolute; bottom: 103pt; left: 0; margin: 0; font-size: 10px; color: var(--brand-text);">Fee Income</p>
+              <p style="position: absolute; bottom: 74pt; left: 0; margin: 0; font-size: 10px; color: var(--brand-text);">Float Deposit</p>
+              <p style="position: absolute; bottom: 37pt; left: 0; margin: 0; font-size: 10px; color: var(--brand-text);">NII Loan</p>
+            </div>
+            <!-- June 2011 bar -->
+            <div style="flex: 1.5; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+              <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text);">43</p>
+              <div style="width: 100%; display: flex; flex-direction: column;">
+                <div style="background: var(--brand-tertiary); height: 22pt; display: flex; align-items: center; justify-content: center;">
+                  <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">10</p>
+                </div>
+                <div style="background: var(--brand-secondary); height: 36pt; display: flex; align-items: center; justify-content: center;">
+                  <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">16</p>
+                </div>
+                <div style="background: var(--brand-primary); height: 39pt; display: flex; align-items: center; justify-content: center;">
+                  <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">17</p>
+                </div>
+              </div>
+              <div style="width: 100%; height: 1.5pt; background: var(--brand-gray-dark);"></div>
+              <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-text); font-weight: bold;">June 2011</p>
+            </div>
+            <!-- Gap column -->
+            <div style="flex: 0.6;"></div>
+            <!-- 2014 bar -->
+            <div style="flex: 1.5; display: flex; flex-direction: column; justify-content: flex-end; align-items: center;">
+              <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text);">77 - 82</p>
+              <div style="width: 100%; display: flex; flex-direction: column;">
+                <div style="background: var(--brand-tertiary); height: 45pt; display: flex; align-items: center; justify-content: center;">
+                  <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">18 - 20</p>
+                </div>
+                <div style="background: var(--brand-secondary); height: 70pt; display: flex; align-items: center; justify-content: center;">
+                  <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">30 - 32</p>
+                </div>
+                <div style="background: var(--brand-primary); height: 65pt; display: flex; align-items: center; justify-content: center;">
+                  <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">29 - 30</p>
+                </div>
+              </div>
+              <div style="width: 100%; height: 1.5pt; background: var(--brand-gray-dark);"></div>
+              <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-text); font-weight: bold;">2014</p>
+            </div>
+            <!-- CAGR column: header at top, pills absolutely from bottom -->
+            <!-- Bar2: Fee 45pt, Float 70pt, NII 65pt = 180pt -->
+            <!-- NII center: 18 + 32.5 = 50.5pt -->
+            <!-- Float center: 18 + 65 + 35 = 118pt -->
+            <!-- Fee center: 18 + 65 + 70 + 22.5 = 175.5pt -->
+            <!-- Total: above bar2 top: 18 + 180 + 6 = 204pt -->
+            <div style="flex: 1.4; position: relative;">
+              <div style="text-align: center; padding-top: 2pt;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); text-decoration: underline;">CAGR</p>
+                <p style="margin: 0; font-size: 9px; color: var(--brand-text); text-decoration: underline;">Percent</p>
+              </div>
+              <!-- ~19 (total) pill -->
+              <div style="position: absolute; bottom: 196pt; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-secondary); background: white; border-radius: 14pt; padding: 2pt 10pt; white-space: nowrap; z-index: 2;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-secondary);">~19</p>
+              </div>
+              <!-- ~19 (Fee Income) pill -->
+              <div style="position: absolute; bottom: 176pt; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-secondary); background: white; border-radius: 14pt; padding: 2pt 10pt; white-space: nowrap; z-index: 2;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-secondary);">~19</p>
+              </div>
+              <!-- ~20 (Float Deposit) pill -->
+              <div style="position: absolute; bottom: 118pt; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-secondary); background: white; border-radius: 14pt; padding: 2pt 10pt; white-space: nowrap; z-index: 2;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-secondary);">~20</p>
+              </div>
+              <!-- ~17 (NII Loan) pill -->
+              <div style="position: absolute; bottom: 50pt; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-secondary); background: white; border-radius: 14pt; padding: 2pt 10pt; white-space: nowrap; z-index: 2;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-secondary);">~17</p>
+              </div>
+            </div>
+            <!-- DELTA ANNOTATION: dashed box bridging bar1 top to bar2 top -->
+            <!-- Bar1 top: 97+18=115pt, Bar2 top: 180+18=198pt, height=83pt -->
+            <div style="position: absolute; left: 30%; width: 30%; bottom: 115pt; height: 83pt; border: 1.5px dashed var(--brand-gray-medium); border-radius: 2pt; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 5;">
+              <div style="background: var(--brand-gray-medium); border-radius: 50%; min-width: 52pt; padding: 3pt 10pt; display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">-22%</p>
+              </div>
+              <svg width="14" height="32" viewBox="0 0 14 32" style="margin-top: 3pt;">
+                <line x1="7" y1="0" x2="7" y2="24" stroke="var(--brand-text-secondary)" stroke-width="1.5"/>
+                <polygon points="2,22 7,32 12,22" fill="var(--brand-text-secondary)"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CHEVRON CONNECTOR -->
+      <div style="display: flex; align-items: center; padding: 0 2pt;">
+        <svg width="24" height="50" viewBox="0 0 24 50">
+          <polygon points="0,0 20,25 0,50" fill="var(--brand-quinary)"/>
+        </svg>
+      </div>
+      <!-- RIGHT PANEL: Key take-away (Container Box) -->
+      <div style="flex: 42; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column;">
+        <div style="background: var(--brand-surface-light); padding: 6pt 14pt; min-height: 22pt; display: flex; align-items: center;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Key take-away</p>
+        </div>
+        <div style="flex: 1; padding: 10pt 14pt;">
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li style="margin-bottom: 10pt; font-size: 10px; color: var(--brand-text); line-height: 1.5; position: relative; padding-left: 14pt;">
+              <span style="position: absolute; left: 0; color: var(--brand-text);">&#8226;</span>
+              <strong style="color: var(--brand-primary);">Individual dental</strong> will grow the most due to the influx of the uninsured <strong>into exchanges</strong> and the pediatric dental mandate
+            </li>
+            <li style="margin-bottom: 10pt; font-size: 10px; color: var(--brand-text); line-height: 1.5; position: relative; padding-left: 14pt;">
+              <span style="position: absolute; left: 0; color: var(--brand-text);">&#8226;</span>
+              <strong style="color: var(--brand-primary);">Individual dental</strong> will grow the most due to the influx of the <strong>uninsured into</strong> exchanges and the pediatric dental mandate
+            </li>
+            <li style="margin-bottom: 10pt; font-size: 10px; color: var(--brand-text); line-height: 1.5; position: relative; padding-left: 14pt;">
+              <span style="position: absolute; left: 0; color: var(--brand-text);">&#8226;</span>
+              <strong style="color: var(--brand-primary);">Individual dental</strong> will grow the most due to the influx of the uninsured into exchanges and the pediatric dental mandate
+            </li>
+            <li style="margin-bottom: 10pt; font-size: 10px; color: var(--brand-text); line-height: 1.5; position: relative; padding-left: 14pt;">
+              <span style="position: absolute; left: 0; color: var(--brand-text);">&#8226;</span>
+              <strong style="color: var(--brand-primary);">Individual dental</strong> will grow the most due to the <strong>influx of the uninsured</strong> into exchanges and the pediatric dental mandate
+            </li>
+            <li style="margin-bottom: 10pt; font-size: 10px; color: var(--brand-text); line-height: 1.5; position: relative; padding-left: 14pt;">
+              <span style="position: absolute; left: 0; color: var(--brand-text);">&#8226;</span>
+              <strong style="color: var(--brand-primary);">Individual dental</strong> will grow the most due to the influx of the uninsured and <strong>the pediatric dental</strong> mandate
+            </li>
+            <li style="margin-bottom: 0pt; font-size: 10px; color: var(--brand-text); line-height: 1.5; position: relative; padding-left: 14pt;">
+              <span style="position: absolute; left: 0; color: var(--brand-text);">&#8226;</span>
+              <strong style="color: var(--brand-primary);">Individual dental</strong> will grow the most due to the influx <strong>of the uninsured into exchanges</strong> and the pediatric dental mandate
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- TAKEAWAY BOX -->
+    <div style="background: var(--brand-primary); padding: 10pt 14pt; border-radius: 3pt; min-height: 32pt;">
+      <p style="margin: 0; font-size: 11px; font-weight: bold; color: white; line-height: 1.35;">Last word of optional conclusion explanation to be used as conclusion of the whole slide or warning</p>
+    </div>
+  </div>
+  <div class="footer-zone">
+    <p class="source">SOURCE: Team analysis</p>
+    <p class="page-num">Nexus | 3</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

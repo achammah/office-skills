@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head><title>Diagnostic Tools Framework</title></head>
+<body class="brand-slide" data-layout="diagram">
+  <div class="title-zone">
+    <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-secondary); text-transform: uppercase; letter-spacing: 0.5px;">CONTEXT AND OBJECTIVES</p>
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">A consistent set of diagnostic tools were used that can be replicated for lean deployments</h1>
+  </div>
+  <div class="content-zone">
+    <!-- Two-column layout: Sources (left ~30%) | Chevron | Framework (right ~68%) -->
+    <div style="display: flex; gap: 8pt; width: 100%;">
+
+      <!-- LEFT PANEL: Sources of insights -->
+      <div style="width: 30%; display: flex; flex-direction: column;">
+        <!-- Container Box with header bar -->
+        <div style="border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+          <!-- Header bar -->
+          <div style="background: var(--brand-surface-light); padding: 5pt 10pt; min-height: 18pt;">
+            <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Sources of insights</p>
+          </div>
+          <!-- Body -->
+          <div style="display: flex; flex-direction: column; padding: 3pt 6pt;">
+
+            <!-- Section 1: Stakeholder interviews -->
+            <div style="display: flex; gap: 5pt; padding: 3pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="min-width: 60pt;">
+                <p style="margin: 0 0 2pt 0; font-size: 9px; font-weight: bold; color: var(--brand-text-body);">Stakeholder interviews</p>
+                <svg width="26" height="20" viewBox="0 0 30 24">
+                  <rect x="0" y="0" width="18" height="12" rx="2" fill="#5B9BD5"/>
+                  <polygon points="4,12 8,18 12,12" fill="#5B9BD5"/>
+                  <rect x="12" y="4" width="18" height="12" rx="2" fill="#2E75B6"/>
+                  <polygon points="18,16 22,22 26,16" fill="#2E75B6"/>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>
+                    <strong>20+ hours</strong> cumulated interviews and discussions with team leaders
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>
+                    <strong>10+ hours</strong> interviews with support (e.g., CSU)
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>
+                    <strong>40+ hours</strong> interviews with front line
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Section 2: Shadowing -->
+            <div style="display: flex; gap: 5pt; padding: 3pt 0; align-items: flex-start; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="min-width: 60pt;">
+                <p style="margin: 0 0 2pt 0; font-size: 9px; font-weight: bold; color: var(--brand-text-body);">Shadowing</p>
+                <svg width="24" height="20" viewBox="0 0 28 24">
+                  <circle cx="10" cy="7" r="5" fill="#5B9BD5"/>
+                  <path d="M0,22 Q0,14 10,14 Q20,14 20,22" fill="#5B9BD5"/>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>
+                    <strong>60+ hours</strong> of shadowing across multiple functions and experiences
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Section 3: Employee self-recording -->
+            <div style="display: flex; gap: 5pt; padding: 3pt 0; border-bottom: 1px dashed var(--brand-gray-medium);">
+              <div style="min-width: 60pt;">
+                <p style="margin: 0 0 2pt 0; font-size: 9px; font-weight: bold; color: var(--brand-text-body);">Employee self-recording</p>
+                <svg width="24" height="20" viewBox="0 0 28 24">
+                  <rect x="2" y="2" width="20" height="18" rx="3" fill="#2E75B6"/>
+                  <polygon points="10,7 10,17 18,12" fill="white"/>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>
+                    <strong>400+ hours</strong> of self-recorded activities across front line
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>
+                    <strong>200+ hours</strong> of self-recorded activities within teams leader
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Section 4: Data requests -->
+            <div style="display: flex; gap: 5pt; padding: 3pt 0 2pt 0;">
+              <div style="min-width: 60pt;">
+                <p style="margin: 0 0 2pt 0; font-size: 9px; font-weight: bold; color: var(--brand-text-body);">Data requests</p>
+                <svg width="24" height="20" viewBox="0 0 28 24">
+                  <rect x="3" y="1" width="18" height="22" rx="2" fill="#5B9BD5"/>
+                  <line x1="7" y1="7" x2="17" y2="7" stroke="white" stroke-width="1.5"/>
+                  <line x1="7" y1="11" x2="17" y2="11" stroke="white" stroke-width="1.5"/>
+                  <line x1="7" y1="15" x2="14" y2="15" stroke="white" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div style="flex: 1;">
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 1pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.2;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Time sheets
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 1pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.2;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Historical demand
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 1pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.2;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Historical capacity
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 1pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.2;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>EES survey
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 1pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.2;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Customer survey
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 1pt; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.2;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Order data
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: var(--brand-text-body); line-height: 1.2;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Etc.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- GREY CHEVRON ARROW (Type B connection between panels) -->
+      <div style="display: flex; align-items: center;">
+        <svg width="18" height="28" viewBox="0 0 24 36">
+          <polygon points="0,0 16,0 24,18 16,36 0,36 8,18" fill="#D0D0D0"/>
+        </svg>
+      </div>
+
+      <!-- RIGHT PANEL: Framework diagram -->
+      <div style="flex: 1; display: flex; flex-direction: column;">
+        <!-- Container Box for framework -->
+        <div style="border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+          <!-- Header bar -->
+          <div style="background: var(--brand-surface-light); padding: 5pt 10pt; min-height: 18pt;">
+            <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Set of diagnostic tools and output that map out to each diagnostic lens</p>
+          </div>
+          <!-- Dark navy framework area -->
+          <div style="background: var(--brand-primary); padding: 5pt; display: flex; flex-direction: column; gap: 3pt; min-height: 260pt;">
+
+            <!-- Top row: boxes 2 and 3 -->
+            <div style="display: flex; gap: 5pt; min-height: 70pt;">
+              <!-- Box 2: Process efficiency -->
+              <div style="flex: 1; background: var(--brand-secondary); padding: 5pt 7pt; display: flex; flex-direction: column;">
+                <p style="margin: 0 0 3pt 0; font-size: 11px; font-weight: bold; color: white;">2. Process efficiency</p>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Value stream Mapping
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Touch time analysis
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Front line variability analysis
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Active observation
+                  </li>
+                </ul>
+              </div>
+              <!-- Box 3: Efficiency management -->
+              <div style="flex: 1; background: var(--brand-secondary); padding: 5pt 7pt; display: flex; flex-direction: column;">
+                <p style="margin: 0 0 3pt 0; font-size: 11px; font-weight: bold; color: white;">3. Efficiency management</p>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Metrics review
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Capacity management review
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Team meeting observations
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Center row: Voice of Customer circle -->
+            <div style="display: flex; align-items: center; justify-content: center; padding: 3pt 0; min-height: 90pt;">
+              <div style="display: flex; flex-direction: column; align-items: center;">
+                <p style="margin: 0 0 3pt 0; font-size: 11px; font-weight: bold; color: white;">1. Voice of Customer</p>
+                <div style="width: 110pt; height: 90pt; border-radius: 50%; background: rgba(255,255,255,0.12); border: 3px solid rgba(255,255,255,0.25); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 6pt;">
+                  <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                      <span style="position: absolute; left: 0;">&#8226;</span>
+                      Customer journey
+                    </li>
+                    <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                      <span style="position: absolute; left: 0;">&#8226;</span>
+                      Demand analysis
+                    </li>
+                    <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                      <span style="position: absolute; left: 0;">&#8226;</span>
+                      Customer surveys
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom row: boxes 5 and 4 -->
+            <div style="display: flex; gap: 5pt; min-height: 70pt;">
+              <div style="flex: 1; background: var(--brand-secondary); padding: 5pt 7pt; display: flex; flex-direction: column;">
+                <p style="margin: 0 0 3pt 0; font-size: 11px; font-weight: bold; color: white;">5. Mindsets and behaviors</p>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Employee engagement workshop
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Lean check in survey
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Change story communication
+                  </li>
+                </ul>
+              </div>
+              <div style="flex: 1; background: var(--brand-secondary); padding: 5pt 7pt; display: flex; flex-direction: column;">
+                <p style="margin: 0 0 3pt 0; font-size: 11px; font-weight: bold; color: white;">4. Organization &amp; Skills</p>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Manager WILO survey
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Skill matrix analysis
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 2pt; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Spans and layers
+                  </li>
+                  <li style="font-size: 9px; margin-bottom: 0; padding-left: 8pt; position: relative; color: white; line-height: 1.25;">
+                    <span style="position: absolute; left: 0;">&#8226;</span>Manager time analysis
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-zone">
+    <p class="source">Source: Diagnostic tools framework</p>
+    <p class="page-num">Nexus | 1</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

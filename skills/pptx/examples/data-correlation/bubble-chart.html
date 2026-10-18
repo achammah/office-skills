@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head><title>Customer-facing initiatives priority matrix</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">~xxx customer-facing initiatives are high to mid priorities based on impact and complexity</h1>
+  </div>
+  <div class="content-zone">
+    <div style="display: flex; flex-direction: row; gap: 6pt; flex: 1;">
+      <!-- Left panel: Y-axis label + Chart + legend (~70%) -->
+      <div style="flex: 2.4; display: flex; flex-direction: column;">
+        <!-- Chart row: Y-axis + Container Box -->
+        <div style="flex: 1; display: flex; flex-direction: row; gap: 2pt;">
+          <!-- Y-axis title (rotated word) + tick labels -->
+          <div style="width: 28pt; display: flex; flex-direction: row;">
+            <div style="width: 15pt; display: flex; align-items: center; justify-content: center; overflow: visible; position: relative;">
+              <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary); transform: rotate(-90deg); white-space: nowrap; width: 60pt; text-align: center;">Impact</p>
+            </div>
+            <div style="width: 13pt; display: flex; flex-direction: column; justify-content: space-between; padding: 18pt 0 4pt 0;">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);">high</p>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);">med</p>
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);">low</p>
+            </div>
+          </div>
+          <!-- Chart Container Box -->
+          <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+            <div style="background: var(--brand-surface-light); padding: 3pt 10pt; min-height: 14pt;">
+              <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Initiative priority matrix</p>
+            </div>
+            <!-- ECharts bubble chart -->
+            <div style="flex: 1; min-height: 0; position: relative;">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary); height: 0; overflow: hidden;">Bubble scatter chart</p>
+              <div data-echarts='{
+                "grid": {
+                  "left": 2,
+                  "right": 5,
+                  "top": 5,
+                  "bottom": 2,
+                  "containLabel": false,
+                  "show": false
+                },
+                "xAxis": {
+                  "type": "value",
+                  "min": 0,
+                  "max": 100,
+                  "axisLabel": { "show": false },
+                  "axisTick": { "show": false },
+                  "axisLine": { "show": false, "lineStyle": { "color": "transparent" } },
+                  "splitLine": {
+                    "show": true,
+                    "lineStyle": { "type": "dashed", "color": "var(--brand-gray-border)" }
+                  },
+                  "splitNumber": 2
+                },
+                "yAxis": {
+                  "type": "value",
+                  "min": 0,
+                  "max": 100,
+                  "axisLabel": { "show": false },
+                  "axisTick": { "show": false },
+                  "axisLine": { "show": false, "lineStyle": { "color": "transparent" } },
+                  "splitLine": {
+                    "show": true,
+                    "lineStyle": { "type": "dashed", "color": "var(--brand-gray-border)" }
+                  },
+                  "splitNumber": 2
+                },
+                "legend": { "show": false },
+                "series": [
+                  {
+                    "name": "L2C",
+                    "type": "scatter",
+                    "itemStyle": { "color": "var(--brand-primary)" },
+                    "label": {
+                      "show": true,
+                      "position": "top",
+                      "fontSize": 10,
+                      "color": "var(--brand-text)",
+                      "lineHeight": 11
+                    },
+                    "labelLayout": { "hideOverlap": true },
+                    "data": [
+                      { "value": [28, 85], "symbolSize": 28, "label": { "formatter": "Loyalty Program\nDevelopment" } },
+                      { "value": [42, 80], "symbolSize": 22, "label": { "formatter": "Digital Contract\nManagement" } },
+                      { "value": [55, 76], "symbolSize": 36, "label": { "formatter": "Behavior-based\nOffers" } },
+                      { "value": [80, 78], "symbolSize": 32, "label": { "formatter": "Conversational AI\nSupport", "position": "right" } },
+                      { "value": [30, 72], "symbolSize": 18, "label": { "formatter": "Proactive Retention\nOffers" } },
+                      { "value": [10, 65], "symbolSize": 26, "label": { "formatter": "Ad\nCustomization", "position": "top" } },
+                      { "value": [25, 58], "symbolSize": 10, "label": { "formatter": "Ticket\nTracking" } },
+                      { "value": [42, 60], "symbolSize": 20, "label": { "formatter": "Brand Advocacy\nProgram" } },
+                      { "value": [62, 66], "symbolSize": 18, "label": { "formatter": "Digital Marketing\nExpansion" } },
+                      { "value": [73, 54], "symbolSize": 14, "label": { "formatter": "Sentiment\nAnalysis", "position": "right" } },
+                      { "value": [20, 48], "symbolSize": 24, "label": { "formatter": "Enhanced\nKnowledge Base", "position": "left" } },
+                      { "value": [37, 46], "symbolSize": 12, "label": { "formatter": "In-platform\nFollow-up" } },
+                      { "value": [48, 42], "symbolSize": 20, "label": { "formatter": "Online Delivery\nScheduling" } },
+                      { "value": [14, 44], "symbolSize": 8, "label": { "formatter": "Multi-step\nTicketing", "position": "left" } },
+                      { "value": [25, 34], "symbolSize": 16, "label": { "formatter": "Digital Payment\nDispute" } },
+                      { "value": [38, 28], "symbolSize": 12, "label": { "formatter": "Digital Off-boarding" } },
+                      { "value": [6, 22], "symbolSize": 8, "label": { "formatter": "Automated SLA\nCommunication", "position": "right" } },
+                      { "value": [22, 10], "symbolSize": 48, "label": { "formatter": "Product\nComparison", "position": "top" } }
+                    ],
+                    "markArea": {
+                      "silent": true,
+                      "data": [
+                        [
+                          { "xAxis": 0, "yAxis": 0, "itemStyle": { "color": "var(--brand-surface-light)", "opacity": 0.25 } },
+                          { "xAxis": 100, "yAxis": 100 }
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    "name": "T2R",
+                    "type": "scatter",
+                    "itemStyle": { "color": "var(--brand-tertiary)" },
+                    "label": { "show": false },
+                    "labelLayout": { "hideOverlap": true },
+                    "data": [
+                      { "value": [65, 42], "symbolSize": 56 }
+                    ]
+                  }
+                ],
+                "graphic": [
+                  {
+                    "type": "circle",
+                    "shape": { "cx": 0, "cy": 0, "r": 105 },
+                    "left": "5%",
+                    "top": "8%",
+                    "scaleX": 1.5,
+                    "scaleY": 1.0,
+                    "style": {
+                      "fill": "transparent",
+                      "stroke": "var(--brand-secondary)",
+                      "lineWidth": 1.5
+                    },
+                    "z": 1
+                  },
+                  {
+                    "type": "circle",
+                    "shape": { "cx": 0, "cy": 0, "r": 80 },
+                    "left": "18%",
+                    "top": "38%",
+                    "scaleX": 1.5,
+                    "scaleY": 1.0,
+                    "style": {
+                      "fill": "transparent",
+                      "stroke": "var(--brand-gray-silver)",
+                      "lineWidth": 1.2
+                    },
+                    "z": 1
+                  },
+                  {
+                    "type": "circle",
+                    "shape": { "cx": 0, "cy": 0, "r": 55 },
+                    "left": "48%",
+                    "top": "52%",
+                    "scaleX": 1.6,
+                    "scaleY": 0.7,
+                    "style": {
+                      "fill": "transparent",
+                      "stroke": "var(--brand-secondary)",
+                      "lineWidth": 1.2
+                    },
+                    "z": 1
+                  },
+                  {
+                    "type": "text",
+                    "left": "14%",
+                    "top": "20%",
+                    "style": {
+                      "text": "High Priority",
+                      "font": "bold 9px Arial",
+                      "fill": "var(--brand-text)",
+                      "backgroundColor": "var(--brand-surface-light)",
+                      "padding": [3, 8, 3, 8],
+                      "borderRadius": 2
+                    },
+                    "z": 5
+                  },
+                  {
+                    "type": "text",
+                    "left": "28%",
+                    "top": "55%",
+                    "style": {
+                      "text": "Mid Priority",
+                      "font": "bold 9px Arial",
+                      "fill": "var(--brand-text)",
+                      "backgroundColor": "var(--brand-surface-light)",
+                      "padding": [3, 8, 3, 8],
+                      "borderRadius": 2
+                    },
+                    "z": 5
+                  },
+                  {
+                    "type": "text",
+                    "left": "52%",
+                    "top": "62%",
+                    "style": {
+                      "text": "Low Priority",
+                      "font": "bold 9px Arial",
+                      "fill": "var(--brand-text)",
+                      "backgroundColor": "var(--brand-surface-light)",
+                      "padding": [3, 8, 3, 8],
+                      "borderRadius": 2
+                    },
+                    "z": 5
+                  }
+                ]
+              }' style="width: 100%; height: 260pt;"></div>
+            </div>
+          </div>
+        </div>
+        <!-- X-axis labels (outside Container Box) -->
+        <div style="display: flex; justify-content: space-between; padding: 1pt 6pt 0 30pt; min-height: 10pt;">
+          <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);">low</p>
+          <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);">med</p>
+          <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);">high</p>
+        </div>
+        <!-- Legend + Complexity label (outside Container Box) -->
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 2pt 6pt 0 30pt; min-height: 14pt;">
+          <p style="margin: 0; font-size: 9px; color: var(--brand-text-secondary);"><strong style="color: var(--brand-primary);">Process</strong>&nbsp;&nbsp;&nbsp;<span style="color: var(--brand-primary);">&#9679;</span> L2C&nbsp;&nbsp;&nbsp;<span style="color: var(--brand-tertiary);">&#9679;</span> T2R</p>
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Complexity</p>
+        </div>
+      </div>
+      <!-- Right panel: Key Takeaway (~28% width) -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column;">
+        <div style="background: var(--brand-surface-light); padding: 4pt 10pt; min-height: 14pt; text-align: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Key Takeaway</p>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 6pt 8pt;">
+            <div style="padding-bottom: 5pt; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding: 5pt 0; border-bottom: 1px dashed var(--brand-gray-border);">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+            <div style="padding-top: 5pt;">
+              <p style="margin: 0; font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.3;"><span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span><strong>XXX</strong></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-zone">
+    <p class="source"></p>
+    <p class="page-num">Nexus | 1</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

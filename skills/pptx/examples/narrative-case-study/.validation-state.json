@@ -1,0 +1,18 @@
+{
+  "runCount": 8,
+  "errors": {
+    "standard.html:[GENERAL]:Content height ~Npt (N% fill — below N% minimum). BLOCKING: increase chart h": {
+      "tag": "GENERAL",
+      "file": "standard.html",
+      "message": "Content height ~208pt (64% fill — below 70% minimum). BLOCKING: increase chart heights, font sizes, or padding to fill ≥70% of ~325pt content zone.",
+      "fix": null,
+      "firstSeenRun": 8,
+      "lastSeenRun": 8,
+      "attempts": 1
+    }
+  },
+  "previousRunErrorKeys": [
+    "standard.html:[GENERAL]:Content height ~Npt (N% fill — below N% minimum). BLOCKING: increase chart h"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:58:16.124Z"
+}

@@ -1,0 +1,251 @@
+{
+  "id": "mckinsey",
+  "name": "McKinsey & Company",
+  "version": "2.0",
+  "description": "McKinsey visual design standards based on 2019 Wolff Olins rebrand",
+
+  "colors": {
+    "primary": {
+      "navy": "#1E3A5F",
+      "logoBlue": "#24477F",
+      "deepBlue": "#132B4D",
+      "vividBlue": "#005EB8"
+    },
+    "secondary": {
+      "blueDark": "#2E75B6",
+      "blueMedium": "#5B9BD5",
+      "blueLight": "#A8C8E8",
+      "bluePale": "#D6E6F4"
+    },
+    "gray": {
+      "dark": "#666666",
+      "medium": "#D0D0D0",
+      "light": "#F5F3EF",
+      "silver": "#C0C5C9",
+      "border": "#E0E0E0"
+    },
+    "semantic": {
+      "positive": "#2E7D32",
+      "negative": "#C62828",
+      "warning": "#F3C13A",
+      "neutral": "#A2AAAD"
+    },
+    "accent": {
+      "gold": "#B8975C",
+      "teal": "#00A0AF",
+      "orange": "#E87722"
+    },
+    "text": {
+      "primary": "#222222",
+      "body": "#333333",
+      "secondary": "#666666",
+      "inverse": "#FFFFFF"
+    },
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F5F3EF",
+      "dark": "#132B4D",
+      "darkGradient": "#0D1F33"
+    },
+    "surface": {
+      "light": "#DAE3F3",
+      "muted": "#F2F2F2"
+    }
+  },
+
+  "colorSequence": {
+    "charts": ["#1E3A5F", "#2E75B6", "#5B9BD5", "#A8C8E8", "#D6E6F4", "#B8975C", "#D0D0D0"],
+    "dataVisualization": ["#1A2F4A", "#24477F", "#3D6BA8", "#5B8FCC", "#7BAFD4", "#9CC4E0", "#6B5B95", "#8B7BAA"],
+    "comparison": {
+      "primary": "#1E3A5F",
+      "secondary": "#B8975C",
+      "tertiary": "#D0D0D0"
+    },
+    "waterfall": {
+      "total": "#1E3A5F",
+      "addition": "#1E3A5F",
+      "subtraction": "#D0D0D0",
+      "remainder": "#B8975C"
+    }
+  },
+
+  "typography": {
+    "families": {
+      "heading": "Georgia, Times New Roman, serif",
+      "body": "Arial, Helvetica, sans-serif",
+      "data": "Arial, Helvetica, sans-serif",
+      "code": "Courier New, monospace"
+    },
+    "sizes": {
+      "actionTitle": { "min": 24, "max": 32, "default": 24 },
+      "sectionHeader": { "min": 20, "max": 24, "default": 22 },
+      "subheading": { "min": 18, "max": 20, "default": 18 },
+      "body": { "min": 16, "max": 18, "default": 16 },
+      "chartTitle": { "min": 14, "max": 16, "default": 14 },
+      "dataLabel": { "min": 11, "max": 14, "default": 12 },
+      "axisLabel": { "min": 10, "max": 12, "default": 11 },
+      "footnote": { "min": 9, "max": 11, "default": 9 },
+      "pageNumber": { "min": 10, "max": 12, "default": 10 }
+    },
+    "weights": {
+      "normal": 400,
+      "semibold": 600,
+      "bold": 700
+    },
+    "lineHeight": {
+      "tight": 1.1,
+      "normal": 1.5,
+      "dense": 1.2
+    }
+  },
+
+  "spacing": {
+    "base": 4,
+    "scale": {
+      "xs": 4,
+      "sm": 8,
+      "md": 12,
+      "lg": 16,
+      "xl": 20,
+      "xxl": 40
+    },
+    "margins": {
+      "slide": { "top": 0.75, "bottom": 0.5, "left": 0.75, "right": 0.75 }
+    }
+  },
+
+  "slide": {
+    "dimensions": {
+      "width": 720,
+      "height": 405,
+      "unit": "pt"
+    },
+    "zones": {
+      "header": { "height": 60, "yStart": 0, "yEnd": 60 },
+      "body": { "height": 315, "yStart": 60, "yEnd": 375 },
+      "footer": { "height": 30, "yStart": 375, "yEnd": 405 }
+    }
+  },
+
+  "charts": {
+    "bar": {
+      "widthRatio": 0.6,
+      "gapRatio": 0.4,
+      "baselineWidth": 2,
+      "baselineColor": "#1E3A5F",
+      "labelPosition": "top",
+      "maxBars": 8
+    },
+    "line": {
+      "strokeWidth": 2,
+      "markerSize": 6,
+      "maxLines": 5
+    },
+    "pie": {
+      "maxSegments": 6,
+      "innerRadiusRatio": 0
+    },
+    "donut": {
+      "innerRadiusRatio": 0.5
+    },
+    "axis": {
+      "lineWidth": 1,
+      "lineColor": "#666666",
+      "showGridlines": false,
+      "gridlineColor": "#E0E0E0",
+      "gridlineWidth": 0.5
+    },
+    "labels": {
+      "fontFamily": "Arial, sans-serif",
+      "fontSize": 11,
+      "fontWeight": "normal",
+      "color": "#333333"
+    }
+  },
+
+  "tables": {
+    "header": {
+      "background": "#24477F",
+      "textColor": "#FFFFFF",
+      "fontSize": 14,
+      "fontWeight": "bold"
+    },
+    "rows": {
+      "odd": "#FFFFFF",
+      "even": "#F5F5F5",
+      "textColor": "#333333",
+      "fontSize": 12
+    },
+    "borders": {
+      "color": "#E0E0E0",
+      "width": 1
+    },
+    "cell": {
+      "padding": 8
+    }
+  },
+
+  "containers": {
+    "default": {
+      "background": "#FFFFFF",
+      "borderColor": "transparent",
+      "borderWidth": 0,
+      "borderRadius": 0,
+      "shadow": "none"
+    },
+    "emphasized": {
+      "background": "#F5F3EF",
+      "borderColor": "#005EB8",
+      "borderWidth": 2,
+      "borderRadius": 0,
+      "shadow": "none"
+    },
+    "accent": {
+      "background": "#132B4D",
+      "borderColor": "transparent",
+      "borderWidth": 0,
+      "borderRadius": 0,
+      "shadow": "none"
+    }
+  },
+
+  "icons": {
+    "style": "outline",
+    "strokeWidth": 2,
+    "defaultColor": "#1E3A5F",
+    "defaultSize": 24
+  },
+
+  "numberFormat": {
+    "thousandsSeparator": " ",
+    "decimalSeparator": "."
+  },
+
+  "rules": {
+    "maxColorsPerChart": 4,
+    "minFontSize": 9,
+    "maxBulletsPerSlide": 6,
+    "maxWordsPerBullet": 6,
+    "barChartStartsAtZero": true,
+    "noItalics": true,
+    "noUnderlines": true,
+    "leftAlignBody": true,
+    "noAnimations": true,
+    "noClipArt": true
+  },
+
+  "cssVariables": {
+    "--mck-navy": "#1E3A5F",
+    "--mck-blue-dark": "#2E75B6",
+    "--mck-blue-medium": "#5B9BD5",
+    "--mck-blue-light": "#A8C8E8",
+    "--mck-blue-pale": "#D6E6F4",
+    "--mck-gray-dark": "#666666",
+    "--mck-gray-medium": "#D0D0D0",
+    "--mck-gray-light": "#F5F3EF",
+    "--mck-white": "#FFFFFF",
+    "--mck-green": "#2E7D32",
+    "--mck-red": "#C62828",
+    "--mck-gold": "#B8975C"
+  }
+}

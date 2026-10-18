@@ -1,0 +1,18 @@
+{
+  "runCount": 32,
+  "errors": {
+    "stacked-with-callouts.html:[GENERAL]:Title N: N chars (max N — will not fit on N lines)": {
+      "tag": "GENERAL",
+      "file": "stacked-with-callouts.html",
+      "message": "Title 1: 96 chars (max 90 — will not fit on 2 lines)",
+      "fix": null,
+      "firstSeenRun": 32,
+      "lastSeenRun": 32,
+      "attempts": 1
+    }
+  },
+  "previousRunErrorKeys": [
+    "stacked-with-callouts.html:[GENERAL]:Title N: N chars (max N — will not fit on N lines)"
+  ],
+  "lastRunTimestamp": "2026-02-17T18:58:43.704Z"
+}

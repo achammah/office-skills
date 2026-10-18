@@ -1,0 +1,28 @@
+{
+  "runCount": 22,
+  "errors": {
+    "scorecard.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resize": {
+      "tag": "GENERAL",
+      "file": "scorecard.html",
+      "message": "Content height estimated at ~662pt (max ~325pt usable). Fix priority: (1) resize containers with flex:1, (2) reduce fonts toward 9px min, (3) reduce padding, (4) reduce content, (5) split slides.",
+      "fix": null,
+      "firstSeenRun": 22,
+      "lastSeenRun": 22,
+      "attempts": 1
+    },
+    "scorecard.html:[TAKEAWAY]:Dark container has N paragraphs but no bullet list (<ul>). WRAP insights in <ul>": {
+      "tag": "TAKEAWAY",
+      "file": "scorecard.html",
+      "message": "Dark container has 6 paragraphs but no bullet list (<ul>). WRAP insights in <ul> with <li> elements. Use bold-keyword pattern. NEVER use plain <p> for multiple insights. Generation is BLOCKED until fixed.",
+      "fix": null,
+      "firstSeenRun": 22,
+      "lastSeenRun": 22,
+      "attempts": 1
+    }
+  },
+  "previousRunErrorKeys": [
+    "scorecard.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resize",
+    "scorecard.html:[TAKEAWAY]:Dark container has N paragraphs but no bullet list (<ul>). WRAP insights in <ul>"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:55:43.596Z"
+}

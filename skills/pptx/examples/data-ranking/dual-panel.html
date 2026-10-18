@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dual Panel Stacked Bar Chart</title>
+</head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">&lt;Title&gt;</h1>
+  </div>
+
+  <div class="content-zone">
+    <div style="display: flex; gap: 10pt; flex: 1;">
+
+      <!-- ===================== LEFT PANEL ===================== -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column;">
+        <!-- Header bar: light background -->
+        <div style="background: var(--brand-surface-light); padding: 6pt 12pt; min-height: 24pt; display: flex; align-items: center;">
+          <p style="margin: 0; font-size: 12px; font-weight: bold; color: var(--brand-primary);">Title Panel 1</p>
+        </div>
+        <!-- Body -->
+        <div style="padding: 6pt 8pt 6pt 8pt; display: flex; flex-direction: column; flex: 1;">
+          <!-- Top row: USD Millions + CAGR header -->
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2pt; min-height: 22pt; gap: 8pt;">
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-secondary);">USD Millions</p>
+            <div style="text-align: center; min-width: 50pt;">
+              <div style="border-bottom: 2px solid var(--brand-primary); padding-bottom: 1pt; display: inline-block;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">CAGR</p>
+              </div>
+              <p style="margin: 1pt 0 0 0; font-size: 10px; color: var(--brand-text-secondary);">Percent</p>
+            </div>
+          </div>
+          <!-- Chart row: labels + chart + CAGR ovals -->
+          <div style="display: flex; gap: 4pt; height: 240pt; align-items: stretch;">
+            <!-- Category labels column -->
+            <div style="width: 76pt; position: relative;">
+              <p style="position: absolute; bottom: 45%; left: 0; margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.2;">Fee Income</p>
+              <p style="position: absolute; bottom: 33%; left: 0; margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.2;">Float Deposit</p>
+              <p style="position: absolute; bottom: 17%; left: 0; margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.2;">NII Loan</p>
+            </div>
+            <!-- Chart -->
+            <div style="flex: 1; position: relative; display: flex; flex-direction: column;">
+              <p style="margin: 0; font-size: 0; height: 0; visibility: hidden;">Stacked bar chart panel 1</p>
+              <div data-echarts='{
+                "legend": {"show": false},
+                "grid": {"left": 8, "right": 8, "top": 10, "bottom": 24},
+                "xAxis": {
+                  "type": "category",
+                  "data": ["June 2011", "2014"],
+                  "axisLabel": {"fontSize": 10, "color": "var(--brand-text)"},
+                  "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-dark)"}},
+                  "axisTick": {"show": false}
+                },
+                "yAxis": {
+                  "type": "value",
+                  "max": 90,
+                  "axisLabel": {"show": false},
+                  "axisLine": {"show": false},
+                  "axisTick": {"show": false},
+                  "splitLine": {"show": false}
+                },
+                "series": [
+                  {
+                    "name": "NII Loan",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 17, "label": {"show": true, "position": "inside", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "17"}},
+                      {"value": 30, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "29 - 30"}}
+                    ],
+                    "itemStyle": {"color": "var(--brand-secondary)"},
+                    "barWidth": "42%"
+                  },
+                  {
+                    "name": "Float Deposit",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 16, "label": {"show": true, "position": "inside", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "16"}},
+                      {"value": 31, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "30 - 32"}}
+                    ],
+                    "itemStyle": {"color": "var(--brand-tertiary)"},
+                    "barWidth": "42%"
+                  },
+                  {
+                    "name": "Fee Income",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 10, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-text)", "formatter": "10"}},
+                      {"value": 19, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-text)", "formatter": "18 - 20"}}
+                    ],
+                    "itemStyle": {"color": "var(--brand-gray-medium)"},
+                    "barWidth": "42%"
+                  },
+                  {
+                    "name": "Totals",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 0, "label": {"show": true, "position": "top", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-primary)", "formatter": "43"}},
+                      {"value": 0, "label": {"show": true, "position": "top", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-primary)", "formatter": "77 - 82"}}
+                    ],
+                    "itemStyle": {"color": "transparent", "borderWidth": 0},
+                    "barWidth": "42%",
+                    "emphasis": {"disabled": true},
+                    "tooltip": {"show": false},
+                    "markLine": {
+                      "symbol": "none",
+                      "lineStyle": {"color": "var(--brand-gray-dark)", "width": 1, "type": "dashed"},
+                      "label": {"show": false},
+                      "data": [
+                        [{"coord": ["June 2011", 17]}, {"coord": ["2014", 30]}],
+                        [{"coord": ["June 2011", 33]}, {"coord": ["2014", 61]}],
+                        [{"coord": ["June 2011", 43]}, {"coord": ["2014", 80]}]
+                      ]
+                    }
+                  }
+                ]
+              }' style="width: 100%; height: 240pt;"></div>
+            </div>
+            <!-- CAGR ovals column -->
+            <div style="width: 54pt; position: relative;">
+              <!-- ~19 for total: top of 2014 bar at y=80/90 -->
+              <div style="position: absolute; bottom: 87%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-gray-dark); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~19</p>
+              </div>
+              <!-- ~19 for Fee Income: center of 2014 fee segment (61-80) -->
+              <div style="position: absolute; bottom: 77%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-gray-medium); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~19</p>
+              </div>
+              <!-- ~20 for Float Deposit: center of 2014 deposit segment (30-61) -->
+              <div style="position: absolute; bottom: 53%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-tertiary); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~20</p>
+              </div>
+              <!-- ~17 for NII Loan: center of 2014 loan segment (0-30) -->
+              <div style="position: absolute; bottom: 21%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-secondary); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~17</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================== RIGHT PANEL ===================== -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column;">
+        <!-- Header bar: dark navy background -->
+        <div style="background: var(--brand-primary); padding: 6pt 12pt; min-height: 24pt; display: flex; align-items: center;">
+          <p style="margin: 0; font-size: 12px; font-weight: bold; color: var(--brand-text-inverse);">Title Panel 2</p>
+        </div>
+        <!-- Body -->
+        <div style="padding: 6pt 8pt 6pt 8pt; display: flex; flex-direction: column; flex: 1;">
+          <!-- Top row: USD Millions + CAGR header -->
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2pt; min-height: 22pt; gap: 8pt;">
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-secondary);">USD Millions</p>
+            <div style="text-align: center; min-width: 50pt;">
+              <div style="border-bottom: 2px solid var(--brand-primary); padding-bottom: 1pt; display: inline-block;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">CAGR</p>
+              </div>
+              <p style="margin: 1pt 0 0 0; font-size: 10px; color: var(--brand-text-secondary);">Percent</p>
+            </div>
+          </div>
+          <!-- Chart row: labels + chart + CAGR ovals -->
+          <div style="display: flex; gap: 4pt; height: 240pt; align-items: stretch;">
+            <!-- Category labels -->
+            <div style="width: 76pt; position: relative;">
+              <p style="position: absolute; bottom: 45%; left: 0; margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.2;">Fee Income</p>
+              <p style="position: absolute; bottom: 33%; left: 0; margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.2;">Float Deposit</p>
+              <p style="position: absolute; bottom: 17%; left: 0; margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.2;">NII Loan</p>
+            </div>
+            <!-- Chart -->
+            <div style="flex: 1; position: relative; display: flex; flex-direction: column;">
+              <p style="margin: 0; font-size: 0; height: 0; visibility: hidden;">Stacked bar chart panel 2</p>
+              <div data-echarts='{
+                "legend": {"show": false},
+                "grid": {"left": 8, "right": 8, "top": 10, "bottom": 24},
+                "xAxis": {
+                  "type": "category",
+                  "data": ["June 2011", "2014"],
+                  "axisLabel": {"fontSize": 10, "color": "var(--brand-text)"},
+                  "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-dark)"}},
+                  "axisTick": {"show": false}
+                },
+                "yAxis": {
+                  "type": "value",
+                  "max": 90,
+                  "axisLabel": {"show": false},
+                  "axisLine": {"show": false},
+                  "axisTick": {"show": false},
+                  "splitLine": {"show": false}
+                },
+                "series": [
+                  {
+                    "name": "NII Loan",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 17, "label": {"show": true, "position": "inside", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "17"}},
+                      {"value": 30, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "29 - 30"}}
+                    ],
+                    "itemStyle": {"color": "var(--brand-secondary)"},
+                    "barWidth": "42%"
+                  },
+                  {
+                    "name": "Float Deposit",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 16, "label": {"show": true, "position": "inside", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "16"}},
+                      {"value": 31, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-bg-primary)", "formatter": "30 - 32"}}
+                    ],
+                    "itemStyle": {"color": "var(--brand-tertiary)"},
+                    "barWidth": "42%"
+                  },
+                  {
+                    "name": "Fee Income",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 10, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-text)", "formatter": "10"}},
+                      {"value": 19, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "var(--brand-text)", "formatter": "18 - 20"}}
+                    ],
+                    "itemStyle": {"color": "var(--brand-gray-medium)"},
+                    "barWidth": "42%"
+                  },
+                  {
+                    "name": "Totals",
+                    "type": "bar",
+                    "stack": "total",
+                    "data": [
+                      {"value": 0, "label": {"show": true, "position": "top", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-primary)", "formatter": "43"}},
+                      {"value": 0, "label": {"show": true, "position": "top", "fontSize": 11, "fontWeight": "bold", "color": "var(--brand-primary)", "formatter": "77 - 82"}}
+                    ],
+                    "itemStyle": {"color": "transparent", "borderWidth": 0},
+                    "barWidth": "42%",
+                    "emphasis": {"disabled": true},
+                    "tooltip": {"show": false},
+                    "markLine": {
+                      "symbol": "none",
+                      "lineStyle": {"color": "var(--brand-gray-dark)", "width": 1, "type": "dashed"},
+                      "label": {"show": false},
+                      "data": [
+                        [{"coord": ["June 2011", 17]}, {"coord": ["2014", 30]}],
+                        [{"coord": ["June 2011", 33]}, {"coord": ["2014", 61]}],
+                        [{"coord": ["June 2011", 43]}, {"coord": ["2014", 80]}]
+                      ]
+                    }
+                  }
+                ]
+              }' style="width: 100%; height: 240pt;"></div>
+            </div>
+            <!-- CAGR ovals column -->
+            <div style="width: 54pt; position: relative;">
+              <div style="position: absolute; bottom: 87%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-gray-dark); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~19</p>
+              </div>
+              <div style="position: absolute; bottom: 77%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-gray-medium); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~19</p>
+              </div>
+              <div style="position: absolute; bottom: 53%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-tertiary); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~20</p>
+              </div>
+              <div style="position: absolute; bottom: 21%; left: 50%; transform: translateX(-50%); border: 1.5px solid var(--brand-secondary); border-radius: 12pt; padding: 2pt 10pt; background: var(--brand-bg-primary); display: flex; align-items: center; justify-content: center;">
+                <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); white-space: nowrap;">~17</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">SOURCE: Team analysis</p>
+    <p class="page-num">Nexus | 3</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

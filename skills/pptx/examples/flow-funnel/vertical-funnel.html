@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head><title>Optimisation de la liste des initiatives prioritaire</title></head>
+<body class="brand-slide" data-layout="process-flow">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">Les objectifs et contraintes permettent d'optimiser les initiatives prioritaires</h1>
+    <p style="margin: 4pt 0 0 0; font-size: 11px; color: var(--brand-gray-dark);">Processus de filtrage en trois &#233;tapes pour s&#233;lectionner les initiatives du Pacte</p>
+  </div>
+
+  <div class="content-zone">
+    <!-- Single container box holding everything -->
+    <div style="border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; flex: 1;">
+      <!-- Header bar -->
+      <div style="background: var(--brand-surface-light); padding: 5pt 14pt; min-height: 22pt;">
+        <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Processus de filtrage des initiatives</p>
+      </div>
+
+      <!-- Body -->
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 0; padding: 4pt 6pt;">
+
+        <!-- Funnel Diagram Row -->
+        <div style="flex: 5; display: flex; align-items: center; gap: 4pt;">
+
+          <!-- Left label -->
+          <div style="width: 64pt; display: flex; flex-direction: column; justify-content: center; padding: 3pt 4pt; background: var(--brand-primary); border-radius: 3pt;">
+            <p style="margin: 0; font-size: 9px; font-weight: bold; color: white; line-height: 1.2;">Ensemble des initiatives (~120)</p>
+          </div>
+
+          <!-- Funnel SVG -->
+          <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 480 140" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="funnelGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#A8C8E8" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#D6E6F4" stop-opacity="0.3"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Main funnel shape -->
+              <path d="M28,8 L165,26 L305,48 L425,63 L442,70 L442,72 L425,79 L305,94 L165,116 L28,134 Z" fill="url(#funnelGrad)"/>
+              <!-- Left opening ellipse -->
+              <ellipse cx="28" cy="71" rx="5" ry="63" fill="#5B9BD5" opacity="0.35"/>
+              <!-- Right end cap -->
+              <ellipse cx="442" cy="71" rx="3" ry="9" fill="#5B9BD5" opacity="0.35"/>
+
+              <!-- Filter gate 1 -->
+              <rect x="135" y="22" width="5" height="98" rx="1" fill="#2E75B6" opacity="0.55"/>
+              <line x1="136" y1="26" x2="136" y2="116" stroke="white" stroke-width="0.4" stroke-dasharray="3,3"/>
+              <line x1="139" y1="26" x2="139" y2="116" stroke="white" stroke-width="0.4" stroke-dasharray="3,3"/>
+
+              <!-- Filter gate 2 -->
+              <rect x="270" y="42" width="5" height="58" rx="1" fill="#2E75B6" opacity="0.55"/>
+              <line x1="271" y1="45" x2="271" y2="97" stroke="white" stroke-width="0.4" stroke-dasharray="3,3"/>
+              <line x1="274" y1="45" x2="274" y2="97" stroke="white" stroke-width="0.4" stroke-dasharray="3,3"/>
+
+              <!-- Filter gate 3 -->
+              <rect x="385" y="56" width="5" height="30" rx="1" fill="#2E75B6" opacity="0.55"/>
+              <line x1="386" y1="58" x2="386" y2="84" stroke="white" stroke-width="0.4" stroke-dasharray="3,3"/>
+              <line x1="389" y1="58" x2="389" y2="84" stroke="white" stroke-width="0.4" stroke-dasharray="3,3"/>
+
+              <!-- Stage 1 circles -->
+              <circle cx="52" cy="42" r="9" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="72" cy="30" r="6" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="76" cy="56" r="7" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="52" cy="71" r="11" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="74" cy="88" r="5" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="96" cy="42" r="5" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="100" cy="68" r="9" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="52" cy="102" r="7" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="86" cy="104" r="4" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="112" cy="96" r="5" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="116" cy="34" r="3" fill="#1E3A5F" opacity="0.4"/>
+
+              <!-- Stage 2 circles -->
+              <circle cx="170" cy="46" r="7" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="190" cy="62" r="10" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="205" cy="84" r="5" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="175" cy="92" r="8" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="220" cy="58" r="4" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="238" cy="76" r="6" fill="#1E3A5F" opacity="0.4"/>
+
+              <!-- Stage 3 circles -->
+              <circle cx="302" cy="58" r="6" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="322" cy="71" r="8" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="308" cy="86" r="4" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="348" cy="74" r="3" fill="#1E3A5F" opacity="0.4"/>
+
+              <!-- Stage 4 circles -->
+              <circle cx="406" cy="66" r="4" fill="#1E3A5F" opacity="0.4"/>
+              <circle cx="422" cy="72" r="3" fill="#1E3A5F" opacity="0.4"/>
+
+              <!-- Entry arrow -->
+              <polygon points="8,64 20,71 8,78" fill="#1E3A5F"/>
+              <!-- Exit arrow -->
+              <polygon points="449,64 461,71 449,78" fill="#1E3A5F"/>
+
+              <!-- Stage labels at top -->
+              <circle cx="147" cy="10" r="7" fill="#1E3A5F"/>
+              <text x="147" y="13" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Arial, sans-serif">1</text>
+              <text x="158" y="13" text-anchor="start" font-size="9" fill="#1E3A5F" font-weight="bold" font-family="Arial, sans-serif">Priorisation</text>
+
+              <circle cx="278" cy="10" r="7" fill="#1E3A5F"/>
+              <text x="278" y="13" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Arial, sans-serif">2</text>
+              <text x="289" y="8" text-anchor="start" font-size="9" fill="#1E3A5F" font-weight="bold" font-family="Arial, sans-serif">Co&#251;ts/Faisabilit&#233;</text>
+              <text x="289" y="17" text-anchor="start" font-size="9" fill="#1E3A5F" font-weight="bold" font-family="Arial, sans-serif">cumul&#233;e</text>
+
+              <circle cx="395" cy="10" r="7" fill="#1E3A5F"/>
+              <text x="395" y="13" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Arial, sans-serif">3</text>
+              <text x="406" y="8" text-anchor="start" font-size="9" fill="#1E3A5F" font-weight="bold" font-family="Arial, sans-serif">Autres</text>
+              <text x="406" y="17" text-anchor="start" font-size="9" fill="#1E3A5F" font-weight="bold" font-family="Arial, sans-serif">contraintes</text>
+            </svg>
+          </div>
+
+          <!-- Right label -->
+          <div style="width: 52pt; display: flex; flex-direction: column; justify-content: center; padding: 2pt 4pt;">
+            <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-text); line-height: 1.25;">Ebauche du Pacte</p>
+          </div>
+        </div>
+
+        <!-- Dashed separator -->
+        <div style="border-bottom: 1px dashed var(--brand-gray-medium); margin: 12pt 0;"></div>
+
+        <!-- Description Row -->
+        <div style="flex: 4; display: flex; gap: 6pt; padding: 0;">
+
+          <!-- Description label -->
+          <div style="width: 58pt; display: flex; flex-direction: column; justify-content: flex-start; padding: 4pt 4pt; background: var(--brand-primary); border-radius: 3pt;">
+            <p style="margin: 0; font-size: 9px; font-weight: bold; color: white; line-height: 1.25;">Description</p>
+          </div>
+
+          <!-- Description 1: Priorisation -->
+          <div style="flex: 1; padding: 6pt 8pt; border: 1px dashed var(--brand-gray-medium); border-radius: 2pt;">
+            <p style="margin: 0 0 6pt 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); line-height: 1.35;">Premi&#232;re priorisation des initiatives sur base des:</p>
+            <ul style="margin: 0; padding-left: 0; list-style: none;">
+              <li style="margin-bottom: 5pt; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>Gammes de co&#251;ts</strong>
+              </li>
+              <li style="margin-bottom: 5pt; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>Impact relatif</strong> sur la qualit&#233; et l'&#233;quit&#233;
+              </li>
+              <li style="margin-bottom: 0; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>Faisabilit&#233; pratique</strong> et politique
+              </li>
+            </ul>
+          </div>
+
+          <!-- Description 2: Couts/Faisabilite -->
+          <div style="flex: 1; padding: 6pt 8pt; border: 1px dashed var(--brand-gray-medium); border-radius: 2pt;">
+            <p style="margin: 0 0 6pt 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); line-height: 1.35;">Filtrage des initiatives prioritaires sur base :</p>
+            <ul style="margin: 0; padding-left: 0; list-style: none;">
+              <li style="margin-bottom: 5pt; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>Du co&#251;t cumul&#233;</strong> (neutralisation du co&#251;t du plan)
+              </li>
+              <li style="margin-bottom: 0; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>De la faisabilit&#233; globale</strong> (d&#233;finie comme &#233;tant la faisabilit&#233; d'un ensemble d'initiative)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Description 3: Autres contraintes -->
+          <div style="flex: 1; padding: 6pt 8pt; border: 1px dashed var(--brand-gray-medium); border-radius: 2pt;">
+            <p style="margin: 0 0 6pt 0; font-size: 11px; font-weight: bold; color: var(--brand-primary); line-height: 1.35;">Filtrage des initiatives du plan afin de r&#233;pondre aux crit&#232;res suivants :</p>
+            <ul style="margin: 0; padding-left: 0; list-style: none;">
+              <li style="margin-bottom: 5pt; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>Ne s'excluent pas</strong> mutuellement
+              </li>
+              <li style="margin-bottom: 5pt; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>Conditions de r&#233;alisation</strong> (pr&#233;requis) remplies
+              </li>
+              <li style="margin-bottom: 0; font-size: 10px; color: var(--brand-text); position: relative; padding-left: 14pt; line-height: 1.4;">
+                <span style="position: absolute; left: 0; color: var(--brand-primary);">&#9632;</span>
+                <strong>Initiatives jug&#233;es</strong> comme n&#233;cessaires incluses
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source"></p>
+    <p class="page-num">Nexus | 7</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

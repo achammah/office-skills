@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head><title>Illustrative output: Examples of driver analysis by portfolio</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <!-- Title zone with legend at top-right -->
+  <div class="title-zone" style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; gap: 8pt;">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading); max-width: 75%; padding-right: 20pt;">Illustrative output: Examples of driver analysis by portfolio</h1>
+    <div style="flex-shrink: 0; min-width: 140pt; display: flex; flex-direction: column; gap: 4pt; align-items: flex-end; padding-top: 2pt;">
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="24pt" height="3pt" viewBox="0 0 24 3"><line x1="0" y1="1.5" x2="24" y2="1.5" stroke="var(--brand-primary)" stroke-width="2.5"/></svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text);">Portfolio X</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="24pt" height="3pt" viewBox="0 0 24 3"><line x1="0" y1="1.5" x2="24" y2="1.5" stroke="var(--brand-secondary)" stroke-width="2.5"/></svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text);">Industry</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-zone" style="display: flex; flex-direction: column; gap: 3pt;">
+    <!-- Row 1: 4 charts -->
+    <div style="flex: 1; display: flex; gap: 3pt;">
+
+      <!-- Chart 1: EBT per active account -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">EBT per active account</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">Dollars</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 80,
+              "max": 130,
+              "interval": 10,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 36, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [85, 105, 118, 130],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [90, 95, 102, 110],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 26pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.2;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>High attrition</strong> at college and retail private label portfolios
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chart 2: Avg receivables per active account -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Avg receivables per active account</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">Dollars</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 2400,
+              "max": 3800,
+              "interval": 200,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 42, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [2600, 2900, 3200, 3600],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [3000, 3050, 3050, 3100],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 26pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.2;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Improved NIM</strong> and NCL
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chart 3: Sales per active account -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Sales per active account</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">Dollars</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 5000,
+              "max": 7500,
+              "interval": 500,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 42, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [5300, 5800, 6500, 7200],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [5500, 5800, 6100, 6400],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 26pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.2;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Increased outstanding</strong> per account in CVG portfolio
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chart 4: Attrition -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Attrition</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">% of total accounts</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 0,
+              "max": 20,
+              "interval": 2.5,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)", "formatter": "{value}%"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 36, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [19, 16.5, 14, 12],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [12, 10.5, 9, 8],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 26pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.2;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Increased spend</strong> in CVG, business, and travel &amp; leisure portfolios
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Row 2: 4 charts -->
+    <div style="flex: 1; display: flex; gap: 3pt;">
+
+      <!-- Chart 5: Net interest margin -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Net interest margin</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">% of average outstandings</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 4,
+              "max": 10,
+              "interval": 1,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)", "formatter": "{value}%"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 36, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [4.5, 5.5, 6.2, 7],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [9.5, 8, 6.5, 5],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 30pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.15; margin-bottom: 1pt;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Overall improvement</strong> in COF
+            </li>
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.15;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Price maintenance</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chart 6: Net credit losses -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Net credit losses</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">% of average outstandings</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 4,
+              "max": 7,
+              "interval": 1,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)", "formatter": "{value}%"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 36, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [5, 5.5, 6, 6.5],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [6.5, 6, 5.5, 5],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 30pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.15; margin-bottom: 1pt;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Better risk management</strong>
+            </li>
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.15;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Seasoned accounts</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chart 7: Total expense per account -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Total expense per account</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">Dollars</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 4,
+              "max": 10,
+              "interval": 1,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)", "formatter": "{value}%"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 36, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [5, 5.5, 6.5, 8],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [7, 8, 9, 10],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 26pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.2;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Lost 5 million</strong> active accounts in CVG
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chart 8: Base active accounts -->
+      <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 2pt 6pt; min-height: 18pt; display: flex; flex-direction: column; justify-content: center;">
+          <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary);">Base active accounts</p>
+          <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">% of industry</p>
+        </div>
+        <div style="flex: 1; padding: 0pt 2pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0; height: 0; overflow: hidden;">spacer</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["2001","2002","2003","2004"],
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)"}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 11,
+              "max": 16,
+              "interval": 1,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-text-secondary)", "width": 1}},
+              "axisTick": {"show": false},
+              "axisLabel": {"show": true, "fontSize": 9, "color": "var(--brand-text)", "formatter": "{value}%"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {"left": 36, "right": 8, "top": 4, "bottom": 20},
+            "legend": {"show": false},
+            "series": [
+              {
+                "name": "Portfolio X",
+                "type": "line",
+                "data": [15.5, 14.5, 13, 12],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "Industry",
+                "type": "line",
+                "data": [14.5, 14.5, 14.5, 14.5],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1;"></div>
+        </div>
+        <div style="padding: 2pt 6pt 3pt 6pt; min-height: 30pt;">
+          <ul style="margin: 0; padding-left: 0; list-style: none;">
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.15; margin-bottom: 1pt;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Operating expenses increased</strong> due to new revenue initiatives
+            </li>
+            <li style="font-size: 9px; color: var(--brand-text); position: relative; padding-left: 10pt; line-height: 1.15;">
+              <span style="position: absolute; left: 0; font-size: 9px; color: var(--brand-primary);">&#9632;</span>
+              <strong>Significant loss</strong> of active account base
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">SOURCE:</p>
+    <p class="page-num">Nexus | 10</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

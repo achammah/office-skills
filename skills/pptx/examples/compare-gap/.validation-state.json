@@ -1,0 +1,48 @@
+{
+  "runCount": 3,
+  "errors": {
+    "gap-analysis.html:[GENERAL]:Title N: N chars (max N — will not fit on N lines)": {
+      "tag": "GENERAL",
+      "file": "gap-analysis.html",
+      "message": "Title 1: 156 chars (max 90 — will not fit on 2 lines)",
+      "fix": null,
+      "firstSeenRun": 1,
+      "lastSeenRun": 3,
+      "attempts": 3
+    },
+    "gap-analysis.html:[GENERAL]:Content height ~Npt (N% fill — below N% minimum). BLOCKING: increase chart h": {
+      "tag": "GENERAL",
+      "file": "gap-analysis.html",
+      "message": "Content height ~220pt (68% fill — below 70% minimum). BLOCKING: increase chart heights, font sizes, or padding to fill ≥70% of ~325pt content zone.",
+      "fix": null,
+      "firstSeenRun": 1,
+      "lastSeenRun": 3,
+      "attempts": 3
+    },
+    "gap-analysis.html:[GENERAL]:Chart N: Missing title element. Add <p> describing what chart shows.": {
+      "tag": "GENERAL",
+      "file": "gap-analysis.html",
+      "message": "Chart 1: Missing title element. Add <p> describing what chart shows.",
+      "fix": null,
+      "firstSeenRun": 2,
+      "lastSeenRun": 3,
+      "attempts": 2
+    },
+    "gap-analysis.html:[GENERAL]:Chart N, Data N: label.fontSize=N (must be >=N)": {
+      "tag": "GENERAL",
+      "file": "gap-analysis.html",
+      "message": "Chart 1, Data 6: label.fontSize=9 (must be >=10)",
+      "fix": null,
+      "firstSeenRun": 2,
+      "lastSeenRun": 3,
+      "attempts": 12
+    }
+  },
+  "previousRunErrorKeys": [
+    "gap-analysis.html:[GENERAL]:Chart N: Missing title element. Add <p> describing what chart shows.",
+    "gap-analysis.html:[GENERAL]:Chart N, Data N: label.fontSize=N (must be >=N)",
+    "gap-analysis.html:[GENERAL]:Title N: N chars (max N — will not fit on N lines)",
+    "gap-analysis.html:[GENERAL]:Content height ~Npt (N% fill — below N% minimum). BLOCKING: increase chart h"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:55:23.792Z"
+}

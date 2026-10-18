@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head><title>[Client] is financially strong and could build an even greater buffer for the future</title></head>
+<body class="brand-slide" data-layout="chart-standalone">
+  <!-- Title zone with legend beside title -->
+  <div class="title-zone" style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; gap: 8pt;">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading); max-width: 75%; padding-right: 14pt; line-height: 1.25;">[Client] is financially strong and could build an even greater buffer for the future</h1>
+    <div style="flex-shrink: 0; min-width: 150pt; display: flex; flex-direction: column; gap: 3pt; align-items: flex-start; padding-top: 2pt;">
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="28pt" height="6pt" viewBox="0 0 28 6">
+          <circle cx="4" cy="3" r="2.5" fill="#00338D"/>
+          <line x1="8" y1="3" x2="28" y2="3" stroke="#00338D" stroke-width="2"/>
+        </svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text-body);">Base projection</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="28pt" height="6pt" viewBox="0 0 28 6">
+          <circle cx="4" cy="3" r="2.5" fill="#005587"/>
+          <line x1="8" y1="3" x2="28" y2="3" stroke="#005587" stroke-width="2" stroke-dasharray="4,3"/>
+        </svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text-body);">Low margin improvement</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="14pt" height="10pt" viewBox="0 0 14 10"><rect x="0" y="0" width="14" height="10" fill="#D97B2A"/></svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text-body);">Primary lever</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="14pt" height="10pt" viewBox="0 0 14 10"><rect x="0" y="0" width="14" height="10" fill="#F5F5F5"/></svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text-body);">Other levers (7)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-zone" style="display: flex; flex-direction: row; gap: 14pt;">
+    <!-- Left: Chart in Container Box (~68%) -->
+    <div style="flex: 2.1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+      <!-- Header bar -->
+      <div style="background: var(--brand-surface-light); padding: 5pt 14pt; min-height: 28pt; display: flex; flex-direction: column; justify-content: center;">
+        <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-primary);">Operating income</p>
+        <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">$ Millions</p>
+      </div>
+      <!-- Chart body -->
+      <div style="flex: 1; position: relative; padding: 3pt 6pt 0pt 6pt; display: flex; flex-direction: column;">
+        <p style="margin: 0; font-size: 9px; color: transparent;">Line chart showing operating income indexed to 2013 margin</p>
+        <div data-echarts='{"xAxis":{"type":"category","data":["2013","2014","2015","2016","2017","2018","2019"],"axisLine":{"show":true,"lineStyle":{"color":"var(--brand-gray-dark)","width":1}},"axisTick":{"show":true},"axisLabel":{"show":true,"fontSize":11,"color":"var(--brand-text)"},"splitLine":{"show":false},"boundaryGap":false},"yAxis":{"type":"value","min":-10,"max":8,"interval":2,"axisLine":{"show":false},"axisTick":{"show":false},"axisLabel":{"show":false},"splitLine":{"show":true,"lineStyle":{"color":"var(--brand-gray-border)","type":"solid","width":0.5}}},"grid":{"left":10,"right":40,"top":15,"bottom":30},"legend":{"show":false},"series":[{"name":"Blue upper bound","type":"line","data":[5,6,8,7,5,3,"-"],"lineStyle":{"width":0},"itemStyle":{"color":"transparent"},"areaStyle":{"color":"var(--brand-surface-light)","opacity":0.5},"showSymbol":false,"symbol":"none","stack":"blue-fill","z":1},{"name":"Blue lower bound mask","type":"line","data":[3,4,6,5,3,1,"-"],"lineStyle":{"width":0},"itemStyle":{"color":"transparent"},"areaStyle":{"color":"white","opacity":1},"showSymbol":false,"symbol":"none","stack":"blue-fill","z":1},{"name":"Orange upper bound","type":"line","data":["-",4,6,5,3,1,"-"],"lineStyle":{"width":0},"itemStyle":{"color":"transparent"},"areaStyle":{"color":"var(--brand-accent-orange)","opacity":0.5},"showSymbol":false,"symbol":"none","stack":"orange-fill","z":2},{"name":"Orange lower bound mask","type":"line","data":["-",0,-1,-3,-5,-8,"-"],"lineStyle":{"width":0},"itemStyle":{"color":"transparent"},"areaStyle":{"color":"white","opacity":1},"showSymbol":false,"symbol":"none","stack":"orange-fill","z":2},{"name":"Base projection","type":"line","data":[3,4,6,5,3,1,"-"],"lineStyle":{"type":"solid","width":2.5,"color":"var(--brand-primary)"},"itemStyle":{"color":"var(--brand-primary)"},"showSymbol":true,"symbol":"circle","symbolSize":7,"label":{"show":true,"position":"top","fontSize":11,"fontWeight":"bold","color":"var(--brand-text)","distance":8},"z":5},{"name":"Low margin improvement","type":"line","data":["-",0,-1,-3,-5,-8,"-"],"lineStyle":{"type":"dashed","width":2,"color":"var(--brand-secondary)"},"itemStyle":{"color":"var(--brand-secondary)"},"showSymbol":true,"symbol":"circle","symbolSize":7,"label":{"show":true,"position":"bottom","fontSize":11,"fontWeight":"bold","color":"var(--brand-text)","distance":8},"z":5},{"name":"Convergence line","type":"line","data":["-","-","-","-","-",1,-8],"lineStyle":{"type":"solid","width":2.5,"color":"var(--brand-primary)"},"itemStyle":{"color":"var(--brand-primary)"},"showSymbol":true,"symbol":"circle","symbolSize":7,"label":{"show":true,"fontSize":11,"fontWeight":"bold","color":"var(--brand-text)","distance":8,"position":"right"},"z":6}]}' style="width: 100%; flex: 1;"></div>
+        <!-- Indexed note in bottom-left of chart -->
+        <p style="margin: 2pt 0 3pt 0; font-size: 9px; color: var(--brand-text-secondary); line-height: 1.3;">[Indexed to 2013 margin: $25MM]</p>
+      </div>
+    </div>
+
+    <!-- Right: Text panel (~32%) - Container Box required by validator (Rule 11) -->
+    <div style="flex: 1; display: flex; flex-direction: column; border: 1.5px solid var(--brand-surface-light); overflow: hidden;">
+      <!-- Header bar -->
+      <div style="background: var(--brand-surface-light); padding: 5pt 14pt; min-height: 28pt; display: flex; flex-direction: column; justify-content: center;">
+        <p style="margin: 0; font-size: 14px; font-weight: bold; color: var(--brand-primary);">Key focus areas</p>
+      </div>
+      <!-- Body -->
+      <div style="flex: 1; padding: 12pt 16pt; display: flex; flex-direction: column; gap: 8pt;">
+        <div>
+          <p style="margin: 0; font-size: 13px; color: var(--brand-text-body); line-height: 1.4; font-weight: bold;">Primary focus, reducing unwarranted clinical variation</p>
+        </div>
+        <div>
+          <p style="margin: 0 0 6pt 0; font-size: 13px; color: var(--brand-text-body); line-height: 1.4;">Selected DRGs from Workshop 1:</p>
+          <ul style="margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6pt;">
+            <li style="font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 18pt; line-height: 1.4;">
+              <span style="position: absolute; left: 0; font-size: 9px;">&#9632;</span>194
+            </li>
+            <li style="font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 18pt; line-height: 1.4;">
+              <span style="position: absolute; left: 0; font-size: 9px;">&#9632;</span>238
+            </li>
+            <li style="font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 18pt; line-height: 1.4;">
+              <span style="position: absolute; left: 0; font-size: 9px;">&#9632;</span>603
+            </li>
+            <li style="font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 18pt; line-height: 1.4;">
+              <span style="position: absolute; left: 0; font-size: 9px;">&#9632;</span>775
+            </li>
+            <li style="font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 18pt; line-height: 1.4;">
+              <span style="position: absolute; left: 0; font-size: 9px;">&#9632;</span>792
+            </li>
+            <li style="font-size: 13px; color: var(--brand-text-body); position: relative; padding-left: 18pt; line-height: 1.4;">
+              <span style="position: absolute; left: 0; font-size: 9px;">&#9632;</span>871
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source" style="font-size: 9px; line-height: 1.2;">NOTE: Timing of opportunity capture is estimated<br>CREDIT: Blair Campomizzi (CLE)<br>SOURCE: OH Hospital Economics Simulator, preliminary OH margin benchmarking</p>
+    <p class="page-num">Nexus | 51</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

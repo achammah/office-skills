@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Section Divider - Introduction</title></head>
+<body class="brand-slide" data-slide-type="structural" data-layout="hero-cover">
+
+  <!-- Title zone: navy background, push title to ~55% of slide height -->
+  <div class="title-zone" style="background: var(--brand-primary); padding: 180pt 36pt 0 36pt; display: flex; flex-direction: column; justify-content: flex-end;">
+    <h1 style="margin: 0; font-size: 44px; font-weight: bold; color: var(--brand-text-inverse); font-family: var(--brand-font-heading); line-height: 1.1;">Introduction</h1>
+  </div>
+
+  <!-- Content zone: navy background with separator line at top -->
+  <div class="content-zone" style="padding: 0; background: var(--brand-primary); display: flex; flex-direction: column;">
+
+    <!-- Container Box (border blends with navy background) -->
+    <div style="border: 1.5px solid var(--brand-primary); display: flex; flex-direction: column; height: 100%; overflow: hidden;">
+      <!-- Header bar: white separator line + very faint label -->
+      <div style="background: var(--brand-primary); padding: 0 36pt 4pt 36pt; border-bottom: none;">
+        <!-- White separator line -->
+        <div style="height: 2px; background: var(--brand-text-inverse);"></div>
+        <p style="margin: 4pt 0 0 0; font-size: 11px; font-weight: bold; color: var(--brand-text-inverse); opacity: 0.15;">Section divider</p>
+      </div>
+      <!-- Body: empty navy space below -->
+      <div style="flex: 1; padding: 24pt 36pt; background: var(--brand-primary);">
+        <p style="margin: 0; font-size: 9px; color: var(--brand-primary);">&nbsp;</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer zone: white background with page number -->
+  <div class="footer-zone" style="background: var(--brand-bg-primary);">
+    <p class="source" style="margin: 0; font-size: 9px; color: transparent;">SOURCE: Internal</p>
+    <p class="page-num" style="margin: 0; font-size: 9px; color: var(--brand-text-body);">Nexus | 8</p>
+  </div>
+
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

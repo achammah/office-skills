@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Waterfall Chart - Volumes Solarec</title>
+</head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 18px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading); padding-right: 100pt;">A horizon 2025, ~20% des volumes Solarec sont &#224; risque de perte ou non renouvellement</h1>
+    <!-- ESTIMATION tag top-right -->
+    <div style="position: absolute; top: 8pt; right: 14pt; display: flex; align-items: center; gap: 4pt;">
+      <div style="width: 3pt; height: 18pt; background: var(--brand-primary);"></div>
+      <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-body);">ESTIMATION</p>
+    </div>
+  </div>
+
+  <div class="content-zone">
+    <div style="display: flex; gap: 14pt; flex: 1;">
+
+      <!-- LEFT PANEL: Container Box with waterfall chart -->
+      <div style="flex: 68; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <!-- Header bar -->
+        <div style="background: var(--brand-surface-light); padding: 8pt 14pt; min-height: 24pt;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Evolution des volumes<sup>1</sup> collect&#233;s dans un sc&#233;nario de stress</p>
+        </div>
+
+        <!-- Chart body -->
+        <div style="flex: 1; display: flex; flex-direction: column; padding: 6pt;">
+          <!-- Subtitle -->
+          <p style="margin: 0 0 0 8pt; font-size: 9px; color: var(--brand-gray-dark);">Millions de litres</p>
+
+          <!-- Waterfall Chart -->
+          <p style="margin: 0; font-size: 0; height: 0; visibility: hidden;">Evolution des volumes</p>
+          <div data-echarts='{
+            "tooltip": {"show": false},
+            "legend": {"show": false},
+            "xAxis": {
+              "type": "category",
+              "data": ["Volumes\n2015", "Perte de\nvolumes en\nWallonie", "Gain de\nvolumes\nen Flandre", "Perte des\nvolumes\nactionnaires", "Perte des\nvolumes autres\npartenaires", "Volumes\n2025"],
+              "axisLabel": {"interval": 0, "fontSize": 9, "color": "#333333", "lineHeight": 12},
+              "axisLine": {"show": true, "lineStyle": {"color": "#666666"}},
+              "axisTick": {"show": false}
+            },
+            "yAxis": {
+              "type": "value",
+              "max": 1100,
+              "axisLabel": {"show": false},
+              "axisLine": {"show": false},
+              "axisTick": {"show": false},
+              "splitLine": {"show": false}
+            },
+            "grid": {"left": 10, "right": 10, "top": 20, "bottom": 60, "containLabel": false},
+            "series": [
+              {
+                "name": "Placeholder",
+                "type": "bar",
+                "stack": "waterfall",
+                "data": [
+                  0,
+                  {"value": 912, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  {"value": 912, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  {"value": 926, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  {"value": 765, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  0
+                ],
+                "itemStyle": {"color": "transparent", "borderWidth": 0},
+                "barWidth": "50%",
+                "label": {"show": false},
+                "emphasis": {"disabled": true},
+                "tooltip": {"show": false}
+              },
+              {
+                "name": "Values",
+                "type": "bar",
+                "stack": "waterfall",
+                "data": [
+                  {"value": 967, "itemStyle": {"color": "#2E75B6"}, "label": {"show": true, "position": "top", "fontSize": 11, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "967"}},
+                  {"value": 55, "itemStyle": {"color": "#DAE3F3", "borderColor": "#A8C8E8", "borderWidth": 1, "borderType": "dashed"}, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "55"}},
+                  {"value": 124, "itemStyle": {"color": "#A8C8E8"}, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "124"}},
+                  {"value": 110, "itemStyle": {"color": "#D6E6F4", "borderColor": "#A8C8E8", "borderWidth": 1, "borderType": "dashed"}, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "110"}},
+                  {"value": 161, "itemStyle": {"color": "#D6E6F4", "borderColor": "#A8C8E8", "borderWidth": 1, "borderType": "dashed"}, "label": {"show": true, "position": "inside", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "161"}},
+                  {"value": 764, "itemStyle": {"color": "#2E75B6"}, "label": {"show": true, "position": "top", "fontSize": 11, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "764"}}
+                ],
+                "barWidth": "50%",
+                "label": {"show": false}
+              }
+            ]
+          }' style="width: 100%; flex: 1; min-height: 180pt; position: relative; z-index: 1;">
+          </div>
+
+          <!-- Annotation boxes below chart, aligned with bar positions -->
+          <div style="display: flex; padding: 4pt 10pt 6pt 10pt; gap: 8pt;">
+            <!-- Spacer for first bar (Volumes 2015) -->
+            <div style="flex: 1;"></div>
+            <!-- Annotation spanning bars 2-3: Augmentation des volumes LDA -->
+            <div style="flex: 2;">
+              <div style="border: 1.5px dashed #A8C8E8; padding: 4pt 6pt; text-align: center;">
+                <p style="margin: 0; font-size: 9px; font-weight: bold; color: #2E75B6; line-height: 1.3;">Augmentation des volumes LDA</p>
+              </div>
+            </div>
+            <!-- Annotation for bar 4: Perte des volumes actionnaire -->
+            <div style="flex: 1;">
+              <div style="border: 1.5px dashed #D6E6F4; padding: 4pt 6pt; text-align: center;">
+                <p style="margin: 0; font-size: 9px; font-weight: bold; color: #2E75B6; line-height: 1.3;">Perte des volumes actionnaire</p>
+              </div>
+            </div>
+            <!-- Annotation for bar 5: Perte des volumes partenariats -->
+            <div style="flex: 1;">
+              <div style="border: 1.5px dashed #D6E6F4; padding: 4pt 6pt; text-align: center;">
+                <p style="margin: 0; font-size: 9px; font-weight: bold; color: #2E75B6; line-height: 1.3;">Perte des volumes partenariats</p>
+              </div>
+            </div>
+            <!-- Spacer for last bar (Volumes 2025) -->
+            <div style="flex: 1;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL: Container Box with bullet points -->
+      <div style="flex: 32; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+        <div style="background: var(--brand-surface-light); padding: 8pt 14pt; min-height: 24pt;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Points cl&#233;s</p>
+        </div>
+        <div style="flex: 1; padding: 8pt 10pt;">
+          <ul style="margin: 0; padding: 0; list-style: none;">
+            <li style="font-size: 10px; margin-bottom: 8pt; padding-left: 14pt; position: relative; line-height: 1.4; color: var(--brand-text);">
+              <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+              Dans le sc&#233;nario le moins favorable, <strong style="color: var(--brand-secondary);">la perte &#233;ventuelle d'actionnaires et autres partenaires</strong> ainsi que <strong style="color: var(--brand-secondary);">l'&#233;volution du bassin de collecte LDA</strong> pourraient impliquer une <strong style="color: var(--brand-secondary);">perte nette de ~200 millions de litres pour Solarec (soit ~20% des volumes 2015)</strong>
+            </li>
+            <li style="font-size: 10px; margin-bottom: 8pt; padding-left: 14pt; position: relative; line-height: 1.4; color: var(--brand-text);">
+              <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+              Pour contrer les impacts financiers de cette chute, LDA serait contraint de diminuer son prix en ferme de <strong style="color: var(--brand-secondary);">~EUR 1.4/100L entre 2015 et 2025</strong>. Cette chute drastique de prix s'explique essentiellement par le <strong style="color: var(--brand-secondary);">manque d'amortissement des co&#251;ts fixe</strong> (~EUR 1.1/100L entre 2015 et 2025)
+            </li>
+            <li style="font-size: 10px; padding-left: 14pt; position: relative; line-height: 1.4; color: var(--brand-text);">
+              <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+              A l'horizon 2025, le mix apporteurs vire vers une <strong style="color: var(--brand-secondary);">plus grande proportion de volumes actionnaires</strong>, qui sont plus chers (<strong style="color: var(--brand-secondary);"> + EUR 1 /100L par rapport &#224; la moyenne 2015</strong>)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">1 Excluant les volumes de perm&#233;at et incluant les volumes issus de travail &#224; fa&#231;on (lait bio et Sodiaal)<br/>SOURCE: Analyse de l'&#233;quipe</p>
+    <p class="page-num">Nexus | 8</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Waterfall Chart - Operational Improvement Savings</title>
+</head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">Implementing a 6 step improvement program will drive $375M in savings</h1>
+    <p style="margin: 2pt 0 0 0; font-size: 10px; color: var(--brand-text-secondary);">Over the next 3 years</p>
+  </div>
+
+  <div class="content-zone">
+    <!-- Single Container Box spanning full width -->
+    <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column;">
+      <!-- Header bar -->
+      <div style="background: var(--brand-surface-light); padding: 5pt 14pt; min-height: 28pt;">
+        <p style="margin: 0; font-size: 12px; font-weight: bold; color: var(--brand-primary);">Operational program will result in significant cost savings over 3 years</p>
+        <p style="margin: 2pt 0 0 0; font-size: 10px; color: var(--brand-text-secondary);">USD millions</p>
+      </div>
+
+      <!-- Body - all children have explicit heights, no flex:1 -->
+      <div style="flex: 1; display: flex; flex-direction: column; padding: 5pt 8pt 3pt 8pt; min-height: 260pt;">
+
+        <!-- Description boxes row -->
+        <div style="display: flex; gap: 5pt; min-height: 108pt;">
+          <!-- Growth -->
+          <div style="flex: 1; border: 1.5px solid var(--brand-primary); border-radius: 6pt; padding: 5pt 5pt;">
+            <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-body);">Growth:</p>
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.35;">Increase revenue for current products and sell in new markets</p>
+          </div>
+          <!-- Savings -->
+          <div style="flex: 1; border: 1.5px solid var(--brand-secondary-blue); border-radius: 6pt; padding: 5pt 5pt;">
+            <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-body);">Savings:</p>
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.35;">Reduce inefficiency through consolidation and outsourcing</p>
+          </div>
+          <!-- Labor -->
+          <div style="flex: 1; border: 1.5px solid var(--brand-accent); border-radius: 6pt; padding: 5pt 5pt;">
+            <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-body);">Labor:</p>
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.35;">Improve efficiency and labor productivity</p>
+          </div>
+          <!-- Centralization -->
+          <div style="flex: 1; border: 1.5px solid var(--brand-accent-light); border-radius: 6pt; padding: 5pt 5pt;">
+            <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-body);">Centralization:</p>
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.35;">Capture economies of scale by centralizing distributed processes</p>
+          </div>
+          <!-- Optimize utilization -->
+          <div style="flex: 1; border: 1.5px solid var(--brand-border); border-radius: 6pt; padding: 5pt 5pt;">
+            <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-body);">Optimize utilization:</p>
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.35;">Reduce downtime and maximize revenue producing activities</p>
+          </div>
+          <!-- Decommissioning -->
+          <div style="flex: 1; border: 1.5px solid var(--brand-text-secondary); border-radius: 6pt; padding: 5pt 5pt;">
+            <p style="margin: 0 0 2pt 0; font-size: 10px; font-weight: bold; color: var(--brand-text-body);">Decommissioning:</p>
+            <p style="margin: 0; font-size: 10px; color: var(--brand-text-body); line-height: 1.35;">Address root causes of denials across corporate, field and operations intersection</p>
+          </div>
+        </div>
+
+        <!-- Connector lines from description boxes down to chart -->
+        <div style="display: flex; gap: 5pt; min-height: 16pt;">
+          <div style="flex: 1; display: flex; justify-content: center;"><div style="width: 0; height: 16pt; border-left: 1.5px dashed var(--brand-border);"></div></div>
+          <div style="flex: 1; display: flex; justify-content: center;"><div style="width: 0; height: 16pt; border-left: 1.5px dashed var(--brand-border);"></div></div>
+          <div style="flex: 1; display: flex; justify-content: center;"><div style="width: 0; height: 16pt; border-left: 1.5px dashed var(--brand-border);"></div></div>
+          <div style="flex: 1; display: flex; justify-content: center;"><div style="width: 0; height: 16pt; border-left: 1.5px dashed var(--brand-border);"></div></div>
+          <div style="flex: 1; display: flex; justify-content: center;"><div style="width: 0; height: 16pt; border-left: 1.5px dashed var(--brand-border);"></div></div>
+          <div style="flex: 1; display: flex; justify-content: center;"><div style="width: 0; height: 16pt; border-left: 1.5px dashed var(--brand-border);"></div></div>
+        </div>
+
+        <!-- Chart title -->
+        <p style="margin: 0 0 2pt 0; font-size: 10px; color: var(--brand-text-secondary); min-height: 12pt;">Cumulative savings, USD millions</p>
+
+        <!-- Waterfall chart - explicit height, no flex:1 -->
+        <div data-echarts='{
+          "tooltip": {"show": false},
+          "legend": {"show": false},
+          "xAxis": {
+            "type": "category",
+            "data": ["2012", "Growth", "Savings", "Labor", "Centralization", "Less down\ntime", "Decommis-\nsioning", "3 year\nsavings"],
+            "axisLabel": {"interval": 0, "fontSize": 10, "lineHeight": 13},
+            "axisLine": {"show": true, "lineStyle": {"width": 1}},
+            "axisTick": {"show": false}
+          },
+          "yAxis": {
+            "type": "value",
+            "max": 400,
+            "axisLabel": {"show": false},
+            "axisLine": {"show": false},
+            "axisTick": {"show": false},
+            "splitLine": {"show": false}
+          },
+          "grid": {"left": 8, "right": 8, "top": 20, "bottom": 35, "containLabel": false},
+          "series": [
+            {
+              "name": "Placeholder",
+              "type": "bar",
+              "stack": "waterfall",
+              "data": [
+                0,
+                {"value": 250, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                {"value": 295, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                {"value": 320, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                {"value": 350, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                {"value": 359, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                {"value": 367, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                0
+              ],
+              "itemStyle": {"color": "transparent", "borderWidth": 0},
+              "barWidth": "55%",
+              "label": {"show": false},
+              "emphasis": {"disabled": true},
+              "tooltip": {"show": false}
+            },
+            {
+              "name": "Values",
+              "type": "bar",
+              "stack": "waterfall",
+              "data": [
+                {"value": 250, "itemStyle": {"color": {"type": "linear", "x": 0, "y": 1, "x2": 1, "y2": 0, "colorStops": [{"offset": 0, "color": "var(--brand-quaternary)"}, {"offset": 1, "color": "var(--brand-primary)"}]}}, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "formatter": "25\n0", "lineHeight": 12}},
+                {"value": 45, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "formatter": "40-\n50", "lineHeight": 12}},
+                {"value": 25, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "formatter": "20-\n30", "lineHeight": 12}},
+                {"value": 30, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "formatter": "25-\n30", "lineHeight": 12}},
+                {"value": 9, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "formatter": "8-\n10", "lineHeight": 12}},
+                {"value": 8, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "formatter": "8-\n10", "lineHeight": 12}},
+                {"value": 8, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "formatter": "1-\n2", "lineHeight": 12}},
+                {"value": 375, "itemStyle": {"color": "var(--brand-primary)"}, "label": {"show": true, "position": "insideTop", "fontSize": 12, "fontWeight": "bold", "color": "white", "formatter": "37\n5", "lineHeight": 14, "padding": [4, 0, 0, 0]}}
+              ],
+              "barWidth": "55%",
+              "label": {"show": false},
+              "markLine": {
+                "symbol": ["none", "none"],
+                "data": [
+                  [{"xAxis": "2012", "yAxis": 250}, {"xAxis": "Growth", "yAxis": 250}],
+                  [{"xAxis": "Growth", "yAxis": 295}, {"xAxis": "Savings", "yAxis": 295}],
+                  [{"xAxis": "Savings", "yAxis": 320}, {"xAxis": "Labor", "yAxis": 320}],
+                  [{"xAxis": "Labor", "yAxis": 350}, {"xAxis": "Centralization", "yAxis": 350}],
+                  [{"xAxis": "Centralization", "yAxis": 359}, {"xAxis": "Less down\ntime", "yAxis": 359}],
+                  [{"xAxis": "Less down\ntime", "yAxis": 367}, {"xAxis": "Decommis-\nsioning", "yAxis": 367}]
+                ],
+                "lineStyle": {"type": "dashed", "width": 1},
+                "label": {"show": false},
+                "silent": true
+              }
+            }
+          ]
+        }' style="width: 100%; min-height: 130pt;">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">SOURCE: Team analysis</p>
+    <p class="page-num">Nexus | 1</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

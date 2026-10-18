@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head><title>Gap Analysis - Prix en ferme 2015 vs 2025</title></head>
+<body class="brand-slide" data-layout="side-by-side">
+  <div class="title-zone" style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; gap: 8pt;">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading); line-height: 1.2; max-width: 80%; padding-right: 8pt;">Entre 2015 et 2025, l&#8217;effet mix fili&#232;res est contrebalanc&#233; par l&#8217;effet mix apporteur et l&#8217;&#233;crasement des co&#251;ts fixes qui repr&#233;sente  l&#8217;essentiel de l&#8217;impact</h1>
+    <div style="flex-shrink: 0; min-width: 120pt; border: 1.5px solid var(--brand-primary); padding: 4pt 6pt; background: white;">
+      <p style="margin: 0 0 2pt 0; font-size: 9px; font-weight: bold; color: var(--brand-primary);">Scenario</p>
+      <ul style="margin: 0; padding: 0; list-style: none;">
+        <li style="margin: 0 0 1pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.25; padding-left: 10pt; position: relative;">
+          <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+          <span style="font-weight: bold;">Volume</span>: stress
+        </li>
+        <li style="margin: 0 0 1pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.25; padding-left: 10pt; position: relative;">
+          <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+          <span style="font-weight: bold;">Tour 5</span>: No
+        </li>
+        <li style="margin: 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.25; padding-left: 10pt; position: relative;">
+          <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+          <span style="font-weight: bold;">Potabilisation</span>: No
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-zone">
+    <div class="panel" style="border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; flex: 1;">
+      <!-- Header bar -->
+      <div style="background: var(--brand-surface-light); padding: 8pt 14pt; display: flex; gap: 8pt; align-items: center; min-height: 28pt;">
+        <div style="flex: 4.2;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Prix moyen en ferme</p>
+          <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-text-secondary);">EUR/100L</p>
+        </div>
+        <div style="flex: 5.8;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Essentiel de la variation</p>
+        </div>
+      </div>
+      <!-- Body -->
+      <div style="padding: 6pt 0pt 6pt 0pt; display: flex; gap: 0pt; flex: 1;">
+        <!-- LEFT: Horizontal Waterfall Chart -->
+        <div class="panel" style="flex: 4.2; display: flex; flex-direction: column;">
+          <div data-echarts='{
+            "tooltip": {"show": false},
+            "legend": {"show": false},
+            "yAxis": {
+              "type": "category",
+              "data": ["Prix en ferme\n2015", "Effet mix\nfili\u00e8res", "Effet mix\napporteurs", "Ecrasements\nco\u00fbts fixe", "Autres effets", "Prix en ferme\n2025"],
+              "axisLabel": {"fontSize": 9, "color": "var(--brand-text-body)", "lineHeight": 12, "interval": 0},
+              "axisLine": {"show": false},
+              "axisTick": {"show": false},
+              "inverse": true
+            },
+            "xAxis": {
+              "type": "value",
+              "max": 42,
+              "axisLabel": {"show": false},
+              "axisLine": {"show": false},
+              "axisTick": {"show": false},
+              "splitLine": {"show": false}
+            },
+            "grid": {"left": 100, "right": 60, "top": 8, "bottom": 8, "containLabel": false},
+            "series": [
+              {
+                "name": "Base",
+                "type": "bar",
+                "stack": "waterfall",
+                "data": [
+                  0,
+                  {"value": 38.1, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  {"value": 37.8, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  {"value": 36.7, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  {"value": 36.7, "itemStyle": {"color": "transparent", "borderWidth": 0}},
+                  0
+                ],
+                "itemStyle": {"color": "transparent", "borderWidth": 0},
+                "barWidth": "50%",
+                "label": {"show": false},
+                "emphasis": {"disabled": true}
+              },
+              {
+                "name": "Values",
+                "type": "bar",
+                "stack": "waterfall",
+                "data": [
+                  {"value": 38.1, "itemStyle": {"color": "var(--brand-primary)"}, "label": {"show": true, "position": "right", "fontSize": 9, "fontWeight": "bold", "color": "var(--brand-text-body)", "formatter": "38,1"}},
+                  {"value": 0.5, "itemStyle": {"color": "var(--brand-secondary)"}, "label": {"show": true, "position": "right", "fontSize": 9, "color": "var(--brand-text-body)", "formatter": "0,5"}},
+                  {"value": 0.8, "itemStyle": {"color": "var(--brand-secondary)"}, "label": {"show": true, "position": "right", "fontSize": 9, "color": "var(--brand-text-body)", "formatter": "0,8"}},
+                  {"value": 1.1, "itemStyle": {"color": "var(--brand-secondary)"}, "label": {"show": true, "position": "right", "fontSize": 9, "color": "var(--brand-text-body)", "formatter": "1,1"}},
+                  {"value": 0, "itemStyle": {"color": "transparent"}, "label": {"show": true, "position": "right", "fontSize": 9, "color": "var(--brand-text-body)", "formatter": "0"}},
+                  {"value": 36.7, "itemStyle": {"color": "var(--brand-primary)"}, "label": {"show": true, "position": "right", "fontSize": 9, "fontWeight": "bold", "color": "var(--brand-text-body)", "formatter": "36,7"}}
+                ],
+                "barWidth": "50%",
+                "label": {"show": false}
+              }
+            ],
+            "graphic": [
+              {
+                "type": "group",
+                "left": "45%",
+                "bottom": "2%",
+                "children": [
+                  {
+                    "type": "text",
+                    "style": {
+                      "text": "\u25c0  -1,4",
+                      "fontSize": 9,
+                      "fontWeight": "bold",
+                      "fill": "var(--brand-primary)",
+                      "fontFamily": "Arial, Helvetica, sans-serif"
+                    }
+                  }
+                ]
+              }
+            ]
+          }' style="width: 100%; flex: 1; min-height: 220pt;">
+          </div>
+        </div>
+        <!-- SEPARATOR -->
+        <div style="width: 0; border-left: 1px solid #D0D0D0;"></div>
+        <!-- RIGHT: Descriptions -->
+        <div class="panel" style="flex: 5.8; display: flex; flex-direction: column; justify-content: space-between;">
+          <!-- Row 1 -->
+          <div style="border-bottom: 1px dashed #D0D0D0; padding: 5pt 0 5pt 10pt; flex: 1; display: flex; align-items: center;">
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li style="margin: 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                Entre 2014 et 2015, l'essentiel de la variation provient du mix fili&#232;res et apporteurs, soit +0.4EUR/100L (d&#233;tail en annexe)
+              </li>
+            </ul>
+          </div>
+          <!-- Row 2 -->
+          <div style="border-bottom: 1px dashed #D0D0D0; padding: 5pt 0 5pt 10pt; flex: 1;">
+            <p style="margin: 0 0 2pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5;">Par rapport &#224; un mix fili&#232;re variable:</p>
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li style="margin: 0 0 2pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                Augmentation des revenus de <span style="font-weight: bold; color: var(--brand-secondary);">~5.7 EUR Mn</span> (d&#251; &#224; la part des liquides)
+              </li>
+              <li style="margin: 0 0 2pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                Diminution des co&#251;ts de transformation de <span style="font-weight: bold; color: var(--brand-secondary);">~2 EUR Mn</span>
+              </li>
+              <li style="margin: 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                Impact direct sur les volumes actionnaires de <span style="font-weight: bold; color: var(--brand-secondary);">~761.2 ML</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Row 3 -->
+          <div style="border-bottom: 1px dashed #D0D0D0; padding: 5pt 0 5pt 10pt; flex: 1;">
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li style="margin: 0 0 2pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+                <span style="font-weight: bold; color: var(--brand-secondary);">Augmentation</span> des volumes autres partenaires et spots <span style="font-weight: bold; color: var(--brand-secondary);">de 3.2 &#224; 130 ML</span> : <span style="font-weight: bold; color: var(--brand-secondary);">Augmentation</span> des <span style="font-weight: bold; color: var(--brand-secondary);">co&#251;ts</span> d'achat <span style="font-weight: bold; color: var(--brand-secondary);">de 43 EUR Mn</span>
+              </li>
+              <li style="margin: 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+                <span style="font-weight: bold; color: var(--brand-secondary);">Diminution</span> volumes actionnaires de <span style="font-weight: bold; color: var(--brand-secondary);">761.2 &#224; 634.4 ML</span> : r&#233;partition des 249.7 EUR Mn restant sur une plus petite base que les 292.7 EUR Mn &#224; mix fili&#232;re constant
+              </li>
+            </ul>
+          </div>
+          <!-- Row 4 -->
+          <div style="border-bottom: 1px dashed #D0D0D0; padding: 5pt 0 5pt 10pt; flex: 1;">
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li style="margin: 0 0 2pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+                <span style="font-weight: bold; color: var(--brand-secondary);">Solarec</span> : <span style="font-weight: bold; color: var(--brand-secondary);">diminution</span> de la structure de co&#251;ts de <span style="font-weight: bold; color: var(--brand-secondary);">~4.4 EUR Mn</span> r&#233;parti sur les <span style="font-weight: bold; color: var(--brand-secondary);">634.4 ML</span> de <span style="font-weight: bold; color: var(--brand-secondary);">volumes actionnaires</span>
+              </li>
+              <li style="margin: 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-secondary);">&#9632;</span>
+                <span style="font-weight: bold; color: var(--brand-secondary);">LDA</span> : <span style="font-weight: bold; color: var(--brand-secondary);">diminution</span> de la structure de co&#251;ts de <span style="font-weight: bold; color: var(--brand-secondary);">~2.1 EUR Mn</span> r&#233;parti sur les <span style="font-weight: bold; color: var(--brand-secondary);">542.3 ML</span> de <span style="font-weight: bold; color: var(--brand-secondary);">collect&#233;s</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Row 5 -->
+          <div style="border-bottom: 1px dashed #D0D0D0; padding: 5pt 0 5pt 10pt; flex: 1;">
+            <p style="margin: 0 0 2pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5;">Autres effets n&#233;gligeables:</p>
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li style="margin: 0 0 1pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                Transport TPT
+              </li>
+              <li style="margin: 0 0 1pt 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                Autres revenus LDA
+              </li>
+              <li style="margin: 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                Contributions fonds propres
+              </li>
+            </ul>
+          </div>
+          <!-- Row 6 -->
+          <div style="padding: 5pt 0 5pt 10pt; flex: 1; display: flex; align-items: center;">
+            <ul style="margin: 0; padding: 0; list-style: none;">
+              <li style="margin: 0; font-size: 9px; color: var(--brand-text-body); line-height: 1.5; padding-left: 10pt; position: relative;">
+                <span style="position: absolute; left: 0; color: var(--brand-text-body);">&#9632;</span>
+                L'effet combin&#233; de ces 4 leviers implique une diminution de prix en ferme moyen de <span style="font-weight: bold; color: var(--brand-secondary);">1.4 EUR/100L</span> entre 2015 et 2025
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-zone">
+    <p class="source">SOURCE: LDA, Analyse de l'&#233;quipe</p>
+    <p class="page-num">Nexus | 7</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

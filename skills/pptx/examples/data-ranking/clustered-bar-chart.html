@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head><title>Clustered Bar Chart with Text Panels</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">Title Here</h1>
+  </div>
+  <div class="content-zone">
+    <div style="display: flex; gap: 0pt; min-height: 310pt;">
+      <!-- Left Panel: Dark navy Takeaway Box with accent line + icon sections (~48%) -->
+      <div style="flex: 48; background: var(--brand-primary); padding: 10pt 18pt 24pt 18pt; display: flex; flex-direction: column;">
+        <!-- Accent line -->
+        <div style="height: 2pt; background: var(--brand-secondary); margin-bottom: 14pt; width: 100%;"></div>
+        <!-- Icon sections as bullet list with manual markers -->
+        <ul style="margin: 0; padding: 0 0 0 4pt; list-style: none; display: flex; flex-direction: column; gap: 60pt; flex: 1;">
+          <!-- Section 1: Layers/diamond icon -->
+          <li style="list-style: none; position: relative; padding-left: 0pt;">
+            <span style="position: absolute; left: -8pt; top: 2pt; color: rgba(255,255,255,0.15); font-size: 9px;">&#9632;</span>
+            <svg width="42" height="38" viewBox="0 0 40 36" style="margin-bottom: 8pt; display: block;">
+              <polygon points="20,1 33,13 20,25 7,13" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+              <polygon points="20,6 28,13 20,20 12,13" fill="none" stroke="white" stroke-width="1.2" stroke-linejoin="round"/>
+              <line x1="9" y1="19" x2="31" y2="19" stroke="white" stroke-width="1.2"/>
+              <line x1="12" y1="24" x2="28" y2="24" stroke="white" stroke-width="1.2"/>
+              <line x1="15" y1="29" x2="25" y2="29" stroke="white" stroke-width="1.2"/>
+            </svg>
+            <p style="margin: 0 0 4pt 0; font-size: 14px; font-weight: bold; color: white; font-family: var(--brand-font-heading);">Title Here</p>
+            <p style="margin: 0; font-size: 11px; color: rgba(255,255,255,0.85); line-height: 1.5;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          </li>
+          <!-- Section 2: Camera/crosshair icon -->
+          <li style="list-style: none; position: relative; padding-left: 0pt;">
+            <span style="position: absolute; left: -8pt; top: 2pt; color: rgba(255,255,255,0.15); font-size: 9px;">&#9632;</span>
+            <svg width="42" height="38" viewBox="0 0 40 36" style="margin-bottom: 8pt; display: block;">
+              <circle cx="20" cy="18" r="14" fill="none" stroke="white" stroke-width="1.5"/>
+              <circle cx="20" cy="18" r="7" fill="none" stroke="white" stroke-width="1.2"/>
+              <line x1="20" y1="4" x2="20" y2="11" stroke="white" stroke-width="1.2"/>
+              <line x1="20" y1="25" x2="20" y2="32" stroke="white" stroke-width="1.2"/>
+              <line x1="6" y1="18" x2="13" y2="18" stroke="white" stroke-width="1.2"/>
+              <line x1="27" y1="18" x2="34" y2="18" stroke="white" stroke-width="1.2"/>
+              <line x1="10" y1="8" x2="14.5" y2="12.5" stroke="white" stroke-width="1.0"/>
+              <line x1="25.5" y1="23.5" x2="30" y2="28" stroke="white" stroke-width="1.0"/>
+              <line x1="30" y1="8" x2="25.5" y2="12.5" stroke="white" stroke-width="1.0"/>
+              <line x1="14.5" y1="23.5" x2="10" y2="28" stroke="white" stroke-width="1.0"/>
+            </svg>
+            <p style="margin: 0 0 4pt 0; font-size: 14px; font-weight: bold; color: white; font-family: var(--brand-font-heading);">Title Here</p>
+            <p style="margin: 0; font-size: 11px; color: rgba(255,255,255,0.85); line-height: 1.5;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          </li>
+        </ul>
+      </div>
+      <!-- Right Panel: Description + chart directly on white background (~52%) -->
+      <div style="flex: 52; display: flex; flex-direction: column; padding: 8pt 16pt 4pt 16pt;">
+        <!-- Description text - 14px T2 to match inspiration prominence -->
+        <p style="margin: 0 0 6pt 0; font-size: 14px; color: var(--brand-text); line-height: 1.5;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+        <!-- Chart area -->
+        <div style="display: flex; flex-direction: column; flex: 1;">
+          <p style="margin: 0; font-size: 9px; color: transparent; line-height: 0.1;">Chart</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "category",
+              "data": ["Category 1", "Category 2", "Category 3"],
+              "axisLabel": {
+                "show": true,
+                "fontSize": 11,
+                "color": "var(--brand-text)"
+              },
+              "axisTick": { "show": false },
+              "axisLine": { "show": true, "lineStyle": { "color": "var(--brand-gray-medium)" } }
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 0,
+              "max": 5,
+              "interval": 0.5,
+              "axisLabel": {
+                "show": true,
+                "fontSize": 11,
+                "color": "var(--brand-gray-dark)"
+              },
+              "splitLine": {
+                "show": true,
+                "lineStyle": { "color": "var(--brand-gray-border)", "type": "solid", "width": 0.5 }
+              },
+              "axisLine": { "show": false },
+              "axisTick": { "show": false }
+            },
+            "grid": {
+              "left": 40,
+              "right": 20,
+              "top": 10,
+              "bottom": 50
+            },
+            "legend": {
+              "show": true,
+              "bottom": 0,
+              "left": "center",
+              "itemWidth": 10,
+              "itemHeight": 10,
+              "itemGap": 40,
+              "textStyle": {
+                "fontSize": 11,
+                "color": "var(--brand-text)"
+              }
+            },
+            "series": [
+              {
+                "name": "Series 1",
+                "type": "bar",
+                "data": [4.3, 4.3, 3.5],
+                "itemStyle": { "color": "var(--brand-secondary)" },
+                "barWidth": "30%",
+                "label": { "show": false }
+              },
+              {
+                "name": "Series 2",
+                "type": "bar",
+                "data": [2.4, 2.3, 1.8],
+                "itemStyle": { "color": "var(--brand-primary)" },
+                "barWidth": "30%",
+                "label": { "show": false }
+              }
+            ]
+          }' style="width: 100%; flex: 1; min-height: 228pt;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-zone">
+    <p class="source">Source: Company data; Nexus analysis</p>
+    <p class="page-num">Nexus | 09</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

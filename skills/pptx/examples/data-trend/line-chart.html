@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head><title>Younger generations face slower growth in living standards without productivity boost</title></head>
+<body class="brand-slide" data-layout="chart-with-insights">
+  <!-- Title zone with legend at top-right (same line) -->
+  <div class="title-zone" style="display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start; gap: 8pt;">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading); max-width: 75%; padding-right: 20pt; line-height: 1.25;">Younger generations face slower growth in living standards without productivity boost</h1>
+    <div style="flex-shrink: 0; min-width: 140pt; display: flex; flex-direction: column; gap: 3pt; align-items: flex-end; padding-top: 2pt;">
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="28pt" height="4pt" viewBox="0 0 28 4"><line x1="0" y1="2" x2="28" y2="2" stroke="var(--brand-neutral)" stroke-width="2.5"/></svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text);">Actual</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <svg width="28pt" height="4pt" viewBox="0 0 28 4"><line x1="0" y1="2" x2="28" y2="2" stroke="var(--brand-neutral)" stroke-width="2.5" stroke-dasharray="5,3"/></svg>
+        <p style="margin: 0; font-size: 9px; color: var(--brand-text);">Forecast</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-zone" style="display: flex; flex-direction: column;">
+    <!-- Single container box: chart + annotation table -->
+    <div style="flex: 1; border: 1.5px solid var(--brand-surface-light); display: flex; flex-direction: column; overflow: hidden;">
+      <!-- Header bar with multi-column layout matching body proportions -->
+      <div style="background: var(--brand-surface-light); padding: 4pt 14pt; min-height: 34pt; display: flex; gap: 8pt; align-items: flex-end;">
+        <div style="flex: 7;">
+          <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Improvement in per capita GDP by year of birth<sup>1</sup></p>
+          <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-gray-dark);">Indexed to 100</p>
+        </div>
+        <div style="flex: 3; display: flex; gap: 10pt; justify-content: flex-start;">
+          <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-primary); line-height: 1.3;">Birth<br>year</p>
+          <div>
+            <p style="margin: 0; font-size: 9px; font-weight: bold; color: var(--brand-primary);">40-year growth</p>
+            <p style="margin: 1pt 0 0 0; font-size: 9px; color: var(--brand-gray-dark);">in per capita</p>
+            <p style="margin: 0; font-size: 9px; color: var(--brand-gray-dark);">GDP, <span style="color: var(--brand-tertiary);">Multiplier</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body: chart + annotation side panel -->
+      <div style="flex: 1; display: flex; gap: 8pt;">
+        <!-- Chart area (flex:7) -->
+        <div style="flex: 7; position: relative; padding: 0pt 4pt; display: flex; flex-direction: column;">
+          <p style="margin: 0; font-size: 9px; color: transparent;">Line chart showing per capita GDP improvement indexed to 100</p>
+          <div data-echarts='{
+            "xAxis": {
+              "type": "value",
+              "min": 0,
+              "max": 40,
+              "interval": 5,
+              "name": "Years from birth",
+              "nameLocation": "middle",
+              "nameGap": 28,
+              "nameTextStyle": {
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "color": "var(--brand-text)"
+              },
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-dark)", "width": 1}},
+              "axisTick": {"show": true},
+              "axisLabel": {"show": true, "fontSize": 10, "color": "var(--brand-text)"},
+              "splitLine": {"show": false}
+            },
+            "yAxis": {
+              "type": "value",
+              "min": 100,
+              "max": 260,
+              "interval": 20,
+              "axisLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-dark)", "width": 1}},
+              "axisTick": {"show": true, "inside": true},
+              "axisLabel": {"show": true, "fontSize": 10, "color": "var(--brand-text)"},
+              "splitLine": {"show": true, "lineStyle": {"color": "var(--brand-gray-border)", "type": "solid", "width": 0.5}}
+            },
+            "grid": {
+              "left": 42,
+              "right": 10,
+              "top": 8,
+              "bottom": 58
+            },
+            "legend": {"show": false},
+            "graphic": [
+              {
+                "type": "text",
+                "left": 22,
+                "bottom": 38,
+                "style": {
+                  "text": "0",
+                  "fontSize": 10,
+                  "fill": "var(--brand-text)",
+                  "textAlign": "right"
+                }
+              }
+            ],
+            "series": [
+              {
+                "name": "1960",
+                "type": "line",
+                "data": [[0,100],[2,104],[4,108],[6,112],[8,117],[10,122],[12,128],[14,136],[16,144],[18,154],[20,166],[22,178],[24,190],[26,202],[28,214],[30,224],[32,233],[34,240],[36,246],[38,250],[40,254]],
+                "lineStyle": {"type": "solid", "width": 2, "color": "var(--brand-neutral)"},
+                "itemStyle": {"color": "var(--brand-neutral)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "1970 actual",
+                "type": "line",
+                "data": [[0,100],[2,103],[4,107],[6,111],[8,115],[10,120],[12,126],[14,133],[16,140],[18,148],[20,157],[22,166],[24,175],[26,184],[28,192],[30,198]],
+                "lineStyle": {"type": "solid", "width": 2, "color": "var(--brand-tertiary)"},
+                "itemStyle": {"color": "var(--brand-tertiary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "1970 forecast",
+                "type": "line",
+                "data": [[30,198],[32,200],[34,201],[36,202],[38,203],[40,204]],
+                "lineStyle": {"type": "dashed", "width": 2, "color": "var(--brand-tertiary)"},
+                "itemStyle": {"color": "var(--brand-tertiary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "1980 actual",
+                "type": "line",
+                "data": [[0,100],[2,103],[4,106],[6,109],[8,113],[10,118],[12,125],[14,133],[16,141],[18,148],[20,155]],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "1980 forecast",
+                "type": "line",
+                "data": [[20,155],[22,162],[24,168],[26,174],[28,180],[30,185],[32,188],[34,191],[36,193],[38,195],[40,196]],
+                "lineStyle": {"type": "dashed", "width": 2.5, "color": "var(--brand-primary)"},
+                "itemStyle": {"color": "var(--brand-primary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "1990 actual",
+                "type": "line",
+                "data": [[0,100],[2,102],[4,104],[6,107],[8,112],[10,118]],
+                "lineStyle": {"type": "solid", "width": 2, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "1990 forecast",
+                "type": "line",
+                "data": [[10,118],[12,125],[14,132],[16,138],[18,145],[20,152],[22,157],[24,161],[26,165],[28,168],[30,171],[32,173],[34,175],[36,176],[38,177],[40,178]],
+                "lineStyle": {"type": "dashed", "width": 2, "color": "var(--brand-secondary)"},
+                "itemStyle": {"color": "var(--brand-secondary)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "2000 actual",
+                "type": "line",
+                "data": [[0,100],[2,102],[4,104],[5,105]],
+                "lineStyle": {"type": "solid", "width": 2.5, "color": "var(--brand-accent-orange)"},
+                "itemStyle": {"color": "var(--brand-accent-orange)"},
+                "showSymbol": false,
+                "symbol": "none"
+              },
+              {
+                "name": "2000 forecast",
+                "type": "line",
+                "data": [[5,105],[6,108],[8,112],[10,117],[12,122],[14,128],[16,133],[18,138],[20,142],[22,146],[24,149],[26,151],[28,153],[30,155],[32,157],[34,158],[36,160],[38,161],[40,163]],
+                "lineStyle": {"type": "dashed", "width": 2.5, "color": "var(--brand-accent-orange)"},
+                "itemStyle": {"color": "var(--brand-accent-orange)"},
+                "showSymbol": false,
+                "symbol": "none"
+              }
+            ]
+          }' style="width: 100%; flex: 1; height: 280pt;"></div>
+        </div>
+
+        <!-- Annotation side panel (flex:3) with arrow column + year/pill column -->
+        <div style="flex: 3; display: flex; gap: 4pt; padding: 4pt 8pt 4pt 0pt; position: relative;">
+          <!-- Arrow column -->
+          <div style="width: 20pt; position: relative;">
+            <div style="position: absolute; top: 3%; left: 2pt; width: 16pt; height: 52%;">
+              <svg width="100%" height="100%" viewBox="0 0 16 100" preserveAspectRatio="none">
+                <rect x="4" y="0" width="8" height="88" fill="var(--brand-primary)"/>
+                <polygon points="0,88 16,88 8,100" fill="var(--brand-primary)"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Year + pill rows: positions aligned with chart y-values at x=40 -->
+          <!-- Chart grid area: ~3% to ~79% of panel height (grid.top=8, grid.bottom=58) -->
+          <!-- yAxis range: 100-260 (160 units). Position formula: 3% + ((260-value)/160)*76% -->
+          <div style="flex: 1; position: relative;">
+            <!-- 1960: value=254, (260-254)/160=0.0375, pos=3%+2.85%=5.85% -->
+            <div style="position: absolute; top: 6%; width: 100%; display: flex; align-items: center; gap: 6pt;">
+              <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-text); min-width: 28pt; text-align: right;">1960</p>
+              <div style="background: var(--brand-neutral); border-radius: 12pt; padding: 2pt 10pt;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">2.54x</p>
+              </div>
+            </div>
+
+            <!-- 1970: value=204, (260-204)/160=0.35, pos=3%+26.6%=29.6% -->
+            <div style="position: absolute; top: 30%; width: 100%; display: flex; align-items: center; gap: 6pt;">
+              <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-text); min-width: 28pt; text-align: right;">1970</p>
+              <div style="background: var(--brand-tertiary); border-radius: 12pt; padding: 2pt 10pt;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">2.04x</p>
+              </div>
+            </div>
+
+            <!-- 1980: value=196, (260-196)/160=0.40, pos=3%+30.4%=33.4% -->
+            <div style="position: absolute; top: 34%; width: 100%; display: flex; align-items: center; gap: 6pt;">
+              <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-text); min-width: 28pt; text-align: right;">1980</p>
+              <div style="background: var(--brand-primary); border-radius: 12pt; padding: 2pt 10pt;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">1.96x</p>
+              </div>
+            </div>
+
+            <!-- 1990: value=178, (260-178)/160=0.5125, pos=3%+38.9%=41.9% -->
+            <div style="position: absolute; top: 42%; width: 100%; display: flex; align-items: center; gap: 6pt;">
+              <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-text); min-width: 28pt; text-align: right;">1990</p>
+              <div style="background: var(--brand-secondary); border-radius: 12pt; padding: 2pt 10pt;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">1.78x</p>
+              </div>
+            </div>
+
+            <!-- 2000: value=163, (260-163)/160=0.606, pos=3%+46.1%=49.1% -->
+            <div style="position: absolute; top: 50%; width: 100%; display: flex; align-items: center; gap: 6pt;">
+              <p style="margin: 0; font-size: 10px; font-weight: bold; color: var(--brand-text); min-width: 28pt; text-align: right;">2000</p>
+              <div style="background: var(--brand-accent-orange); border-radius: 12pt; padding: 2pt 10pt;">
+                <p style="margin: 0; font-size: 10px; font-weight: bold; color: white;">1.63x</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source" style="font-size: 9px; line-height: 1.2;">1 GDP data for 2010-15 is based on Nexus and Moody's consensus projections. Thereafter, we assume 1.7 percent productivity growth in line with the historical rate. The share of the working-age population will decline with UN projections (66 percent in 2009; 60 percent in 2030).</p>
+    <p class="source" style="font-size: 9px; line-height: 1.2;">SOURCE: US Bureau of Economic Analysis; US Census Bureau; Moody's Economy.com; Nexus Global Institute analysis</p>
+    <p class="page-num">Nexus | 1</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

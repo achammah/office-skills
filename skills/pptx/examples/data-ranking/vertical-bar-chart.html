@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document Search Priority Ranking</title>
+</head>
+<body class="brand-slide" data-layout="chart-standalone">
+  <div class="title-zone">
+    <h1 style="margin: 0; font-size: 20px; font-weight: bold; color: var(--brand-primary); font-family: var(--brand-font-heading);">Document search highlighted as priority use case in April 2013 interviews</h1>
+    <div style="display: flex; gap: 24pt; align-items: center; margin-top: 4pt;">
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <div style="width: 20pt; height: 12pt; background: var(--brand-accent);"></div>
+        <p style="margin: 0; font-size: 9px;">Proposed set of priority-1 developments</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6pt;">
+        <div style="width: 20pt; height: 12pt; background: var(--brand-surface-light);"></div>
+        <p style="margin: 0; font-size: 9px;">Proposed set of priority-2 developments</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-zone">
+    <!-- Chart container narrowed to 85% to allow overlay box to straddle right border -->
+    <div style="border: 1.5px solid var(--brand-surface-light); width: 85%; position: relative; flex: 1; display: flex; flex-direction: column; overflow: hidden;">
+      <!-- Chart header bar -->
+      <div style="background: var(--brand-surface-light); padding: 8pt 14pt;">
+        <p style="margin: 0; font-size: 11px; font-weight: bold; color: var(--brand-primary);">Prioritization of functionalities based on forced ranking</p>
+        <p style="margin: 2pt 0 0 0; font-size: 9px; color: var(--brand-gray-dark);">% of respondents mentioning feature within the priority range (n=14)</p>
+      </div>
+
+      <!-- Chart body area (everything below header) -->
+      <div style="flex: 1; position: relative; padding: 0 6pt;">
+        <!-- Background highlight zone 1: Priority-1 (bars 0-2) — border between bar 2 and bar 3 -->
+        <!-- containLabel shifts plot right ~15pt for first label. 15 bars over ~520pt ≈ 34.7pt each -->
+        <!-- Zone 1 right edge: 6+15+3*34.7 ≈ 125pt. Widened slightly for visual centering. -->
+        <div style="position: absolute; top: 3pt; left: 6pt; width: 122pt; bottom: 3pt; background: var(--brand-accent); opacity: 0.12; z-index: 0;"></div>
+        <!-- Background highlight zone 2: Priority-2 (bars 3-6) — starts where zone 1 ends -->
+        <!-- Zone 2 right edge: 6+15+7*34.7 ≈ 264pt. Width = 264-128 = 136pt -->
+        <div style="position: absolute; top: 3pt; left: 128pt; width: 136pt; bottom: 3pt; background: var(--brand-surface-light); opacity: 0.5; z-index: 0;"></div>
+
+        <!-- Chart legend (upper right) -->
+        <div style="position: absolute; top: 6pt; right: 18pt; display: flex; flex-direction: column; gap: 4pt; z-index: 5;">
+          <div style="display: flex; align-items: center; gap: 6pt;">
+            <div style="width: 16pt; height: 10pt; background: #A8C8E8;"></div>
+            <p style="margin: 0; font-size: 9px;">Top 4-6 priorities</p>
+          </div>
+          <div style="display: flex; align-items: center; gap: 6pt;">
+            <div style="width: 16pt; height: 10pt; background: #2E75B6;"></div>
+            <p style="margin: 0; font-size: 9px;">Top 3 priorities</p>
+          </div>
+        </div>
+
+        <!-- Bar Chart — expanded vertically -->
+        <h3 style="margin: 0; font-size: 0; height: 0; visibility: hidden;">Functionality priority ranking</h3>
+        <div data-echarts='{
+          "legend": {"show": false},
+          "xAxis": {
+            "type": "category",
+            "data": ["Firm\ndirec-\ntory", "Full\nKNOW\nprofile", "Simple\ndocu-\nment\nsearch", "Submit\nR&I\nrequest", "Exp-\nertise\nsearch", "First\nAlerts", "McK\nNews", "External\nsources\nand\nmarket\ndata", "Micro-\nblog", "Advan-\nced\nsearch", "Prac-\ntice\nnews", "Other/\next.\nnews", "Prac-\ntice\ninitia-\ntives", "Prac.\nRecomm.\ndocs/\nexperts", "Status\nof R&I\nrequest"],
+            "axisLabel": {"interval": 0, "fontSize": 9, "color": "#333333", "lineHeight": 11},
+            "axisLine": {"show": true, "lineStyle": {"color": "#666666"}},
+            "axisTick": {"show": false}
+          },
+          "yAxis": {
+            "type": "value",
+            "max": 115,
+            "axisLabel": {"show": false},
+            "axisLine": {"show": false},
+            "axisTick": {"show": false},
+            "splitLine": {"show": false}
+          },
+          "grid": {"left": 5, "right": 5, "top": 15, "bottom": 60, "containLabel": true},
+          "series": [
+            {
+              "name": "Top 3 priorities",
+              "type": "bar",
+              "stack": "total",
+              "data": [100, 43, 43, 0, 14, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0],
+              "itemStyle": {"color": "#2E75B6"},
+              "barWidth": "55%",
+              "label": {"show": false}
+            },
+            {
+              "name": "Top 4-6 priorities",
+              "type": "bar",
+              "stack": "total",
+              "data": [
+                {"value": 0, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "100"}},
+                {"value": 57, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "100"}},
+                {"value": 50, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "93"}},
+                {"value": 57, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "57"}},
+                {"value": 36, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "50"}},
+                {"value": 36, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "36"}},
+                {"value": 22, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "29"}},
+                {"value": 21, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "21"}},
+                {"value": 21, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "21"}},
+                {"value": 14, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "14"}},
+                {"value": 14, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "14"}},
+                {"value": 7, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "7"}},
+                {"value": 7, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "7"}},
+                {"value": 7, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "7"}},
+                {"value": 7, "label": {"show": true, "position": "top", "fontSize": 10, "fontWeight": "bold", "color": "#1E3A5F", "formatter": "7"}}
+              ],
+              "itemStyle": {"color": "#A8C8E8"},
+              "barWidth": "55%"
+            }
+          ]
+        }' style="width: 100%; height: 280pt; position: relative; z-index: 1;">
+        </div>
+
+        <!-- Speech bubble callout: Micro-blog bar (bar 8 of 15, center ≈ 311pt from left) -->
+        <!-- Positioned lower to match inspiration — roughly at 50/36 bar height level -->
+        <div style="position: absolute; top: 115pt; left: 270pt; width: 195pt; z-index: 10;">
+          <!-- Bubble body: rounded rect with bottom border hidden where pointer connects -->
+          <div style="background: white; border: 1px solid #A2AAAD; border-radius: 4pt; padding: 8pt 10pt; border-bottom-color: white;">
+            <p style="margin: 0; font-size: 9px; color: #1E3A5F; line-height: 1.35;">Micro-blog potentially underestimated since few of the interviewees are users</p>
+          </div>
+          <!-- Pointer triangle: seamless connection, only outer edges stroked -->
+          <svg width="24" height="14" viewBox="0 0 24 14" style="margin-left: 40pt; margin-top: -1pt; display: block;">
+            <path d="M0,0 L12,14 L24,0" fill="white" stroke="#A2AAAD" stroke-width="1" stroke-linejoin="round"/>
+            <line x1="0" y1="0" x2="24" y2="0" stroke="white" stroke-width="2"/>
+          </svg>
+        </div>
+
+        <!-- Dark navy overlay box, straddling right border — vertically centered on container -->
+        <div style="position: absolute; top: 60pt; right: -70pt; background: var(--brand-primary); padding: 10pt 12pt; border-radius: 3pt; width: 145pt; z-index: 10;">
+          <p style="margin: 0 0 4pt 0; font-size: 10px; font-weight: bold; color: white;">Identified as not relevant:</p>
+          <div style="height: 1.5pt; background: white; margin-bottom: 6pt;"></div>
+          <ul style="margin: 0; padding-left: 14pt; list-style: none;">
+            <li style="margin-bottom: 4pt; font-size: 9px; color: white; position: relative; padding-left: 10pt;">
+              <span style="position: absolute; left: 0;">&#9632;</span>
+              Submission of a PD
+            </li>
+            <li style="margin-bottom: 4pt; font-size: 9px; color: white; position: relative; padding-left: 10pt;">
+              <span style="position: absolute; left: 0;">&#9632;</span>
+              Submission of a Knowledge nugget
+            </li>
+            <li style="font-size: 9px; color: white; position: relative; padding-left: 10pt;">
+              <span style="position: absolute; left: 0;">&#9632;</span>
+              Rating of documents
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-zone">
+    <p class="source">Source: Digital Solutions Team, internal CSS survey</p>
+    <p class="page-num">Nexus | 10</p>
+  </div>
+</body>
+<!-- MULTI-SLIDE REMINDER: If creating 3+ slides, you MUST use the Task tool to spawn sub-agents (one per slide, all in ONE message). Do NOT write all slides yourself. See SKILL.md → Multi-Slide Presentations. -->
+</html>

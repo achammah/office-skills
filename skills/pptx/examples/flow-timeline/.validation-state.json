@@ -1,0 +1,18 @@
+{
+  "runCount": 12,
+  "errors": {
+    "swimlane.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resiz": {
+      "tag": "GENERAL",
+      "file": "swimlane.html",
+      "message": "Content height estimated at ~1264pt (max ~325pt usable). Fix priority: (1) resize containers with flex:1, (2) reduce fonts toward 9px min, (3) reduce padding, (4) reduce content, (5) split slides.",
+      "fix": null,
+      "firstSeenRun": 12,
+      "lastSeenRun": 12,
+      "attempts": 1
+    }
+  },
+  "previousRunErrorKeys": [
+    "swimlane.html:[GENERAL]:Content height estimated at ~Npt (max ~Npt usable). Fix priority: (N) resiz"
+  ],
+  "lastRunTimestamp": "2026-02-17T16:57:59.437Z"
+}
